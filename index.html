@@ -1,0 +1,2833 @@
+<!doctype html>
+<html lang="zh-CN" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>春节 · 岁首｜中国人的新年</title>
+<meta name="description" content="从岁首祈年到世界非遗，读懂春节的起源、八项年俗、十二生肖、吉祥纹样、灯谜与五首诗词。单页文化专题，离线可读。">
+<meta name="theme-color" content="#F5EFE3">
+<meta name="color-scheme" content="light">
+<meta property="og:title" content="春节 · 岁首｜中国人的新年">
+<meta property="og:description" content="从岁首祈年到世界非遗，读懂春节的起源、八项年俗、十二生肖、吉祥纹样、灯谜与五首诗词。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="zh_CN">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23A62B1F'/%3E%3Ctext x='32' y='45' font-size='38' text-anchor='middle' fill='%23F5EFE3' font-family='serif'%3E%E6%98%A5%3C/text%3E%3C/svg%3E">
+<script>document.documentElement.classList.remove('no-js');document.documentElement.classList.add('js');</script>
+<style>
+/* ============================================================
+   设计令牌
+   宣纸、朱砂、墨色；金色与青灰只作装饰。
+   ============================================================ */
+:root {
+  --paper: #F5EFE3;
+  --paper-light: #FBF7EF;
+  --paper-deep: #EDE3D1;
+  --ink: #1C1A17;
+  --ink-soft: #4A453D;
+  --cinnabar: #A62B1F;
+  --cinnabar-deep: #7A1C13;
+  --gold: #C9A227;
+  --celadon: #6E7B6B;
+  --rule: rgba(28, 26, 23, 0.18);
+  --rule-strong: rgba(28, 26, 23, 0.34);
+  --font-serif: "Noto Serif SC", "Source Han Serif SC", "Songti SC", "STSong", "SimSun", serif;
+  --font-kai: "Kaiti SC", "STKaiti", "KaiTi", "KaiTi_GB2312", "Noto Serif SC", serif;
+  --font-sans: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+  --header-h: 68px;
+  --page-max: 1280px;
+  --gutter: clamp(20px, 4vw, 48px);
+  --section-pad: clamp(80px, 12vh, 136px);
+  --paper-texture: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)' opacity='.04'/%3E%3C/svg%3E");
+}
+
+/* ============================================================
+   基础
+   ============================================================ */
+:where(*, *::before, *::after) { box-sizing: border-box; }
+:where(html, body, h1, h2, h3, p, ol, ul, figure, blockquote) { margin: 0; }
+:where(ol, ul) { padding: 0; list-style: none; }
+:where(a) { color: inherit; text-decoration: none; }
+:where(button) { font: inherit; color: inherit; background: none; border: 0; padding: 0; }
+:where(img, svg) { max-width: 100%; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  color-scheme: light;
+}
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
+
+body {
+  background-color: var(--paper);
+  background-image: var(--paper-texture);
+  color: var(--ink);
+  font-family: var(--font-serif);
+  font-size: clamp(1rem, 0.96rem + 0.12vw, 1.08rem);
+  line-height: 1.95;
+  letter-spacing: 0.015em;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection { background: var(--cinnabar); color: var(--paper); }
+
+:focus-visible {
+  outline: 2px solid var(--cinnabar);
+  outline-offset: 3px;
+}
+
+/* 跳转目标是整页容器，不画整页焦点框；交互元素仍保留焦点环 */
+#main:focus { outline: none; }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 100;
+  padding: 10px 16px;
+  background: var(--cinnabar);
+  color: var(--paper);
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  transform: translateY(-160%);
+  transition: transform 0.2s ease;
+}
+.skip-link:focus { transform: translateY(0); }
+
+/* ============================================================
+   页头
+   ============================================================ */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--paper);
+  border-bottom: 1px solid var(--rule);
+}
+.site-header__inner {
+  max-width: var(--page-max);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+  min-height: var(--header-h);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+  letter-spacing: 0.12em;
+  white-space: nowrap;
+}
+.brand__mark {
+  width: 9px;
+  height: 9px;
+  background: var(--cinnabar);
+  flex: none;
+}
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: clamp(14px, 2.4vw, 28px);
+  font-family: var(--font-sans);
+}
+.site-nav a {
+  position: relative;
+  padding: 6px 0;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  color: var(--ink-soft);
+  transition: color 0.2s ease;
+}
+.site-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  height: 1px;
+  background: var(--cinnabar);
+  transition: right 0.25s ease;
+}
+.site-nav a:hover,
+.site-nav a[aria-current] { color: var(--cinnabar); }
+.site-nav a:hover::after,
+.site-nav a[aria-current]::after { right: 0; }
+
+/* ============================================================
+   页面骨架：左侧竖排导航 + 正文
+   ============================================================ */
+.page-shell {
+  max-width: var(--page-max);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+  display: grid;
+  grid-template-columns: 88px minmax(0, 1fr);
+  gap: clamp(24px, 3vw, 48px);
+  align-items: start;
+}
+.rail {
+  position: sticky;
+  top: calc(var(--header-h) + 32px);
+  height: calc(100vh - var(--header-h) - 64px);
+  display: flex;
+  gap: 14px;
+  padding-top: 28px;
+}
+.rail__track {
+  position: relative;
+  width: 1px;
+  flex: none;
+  margin-left: 10px;
+  background: var(--rule);
+}
+.rail__progress {
+  position: absolute;
+  inset: 0;
+  background: var(--cinnabar);
+  transform: scaleY(0);
+  transform-origin: top center;
+  box-shadow: 0 0 10px rgba(166, 43, 31, 0.45);
+}
+.rail__spark {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 7px;
+  height: 7px;
+  margin: -3.5px 0 0 -3.5px;
+  border-radius: 50%;
+  background: #FFF7E4;
+  box-shadow: 0 0 0 1px rgba(166, 43, 31, 0.85),
+    0 0 10px 2px rgba(166, 43, 31, 0.5),
+    0 0 22px 7px rgba(201, 162, 39, 0.3);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.rail__spark.is-on { opacity: 1; }
+.rail__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.rail__nav a {
+  writing-mode: vertical-rl;
+  padding: 6px 0;
+  font-size: 0.92rem;
+  letter-spacing: 0.2em;
+  color: var(--ink-soft);
+  transition: color 0.2s ease;
+}
+.rail__nav a:hover,
+.rail__nav a[aria-current] { color: var(--cinnabar); }
+
+/* ============================================================
+   首屏
+   ============================================================ */
+.hero {
+  position: relative;
+  overflow: hidden;
+  min-height: calc(100vh - var(--header-h));
+  min-height: calc(100svh - var(--header-h));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(40px, 7vh, 80px) 0 clamp(32px, 5vh, 56px);
+  scroll-margin-top: 0;
+}
+.hero__grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(280px, 1.2fr) auto minmax(150px, 210px);
+  gap: clamp(24px, 2.8vw, 44px);
+  align-items: center;
+}
+.hero__visual {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+}
+.window-flower {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 520px);
+  height: auto;
+  display: block;
+  overflow: visible;
+  transition: transform 0.9s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.wf-char {
+  font-family: var(--font-kai);
+  font-size: 128px;
+  font-weight: 500;
+  fill: var(--cinnabar);
+}
+
+.hero__titles {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: clamp(14px, 2vw, 26px);
+}
+.hero__title-wrap {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  gap: clamp(12px, 1.6vw, 22px);
+}
+.hero__title {
+  writing-mode: vertical-rl;
+  font-size: clamp(4.2rem, 9vw, 7.6rem);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.08em;
+  color: var(--ink);
+  text-shadow: 0 0 46px rgba(255, 250, 232, 0.95), 0 0 26px rgba(201, 162, 39, 0.22);
+}
+.hero__sub {
+  writing-mode: vertical-rl;
+  padding-top: 0.12em;
+  font-size: clamp(1.5rem, 2.6vw, 2.2rem);
+  line-height: 1.2;
+  letter-spacing: 0.18em;
+  color: var(--cinnabar);
+}
+.hero__lede {
+  writing-mode: vertical-rl;
+  padding-top: 0.3em;
+  font-size: 0.9rem;
+  line-height: 1.9;
+  letter-spacing: 0.22em;
+  color: var(--ink-soft);
+}
+.hero__seal { align-self: flex-end; }
+
+.hero__aside {
+  max-width: 220px;
+  padding-left: clamp(14px, 2vw, 22px);
+  border-left: 1px solid var(--rule);
+}
+.hero__date {
+  font-size: 1.12rem;
+  letter-spacing: 0.08em;
+  color: var(--ink);
+}
+.hero__desc {
+  margin-top: 8px;
+  font-size: 0.88rem;
+  line-height: 1.75;
+  color: var(--ink-soft);
+}
+.hero__note {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--rule);
+  font-family: var(--font-sans);
+  font-size: 0.74rem;
+  line-height: 1.75;
+  color: var(--ink-soft);
+}
+.hero__scroll {
+  position: relative;
+  z-index: 1;
+  align-self: flex-end;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: clamp(20px, 4vh, 40px);
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  color: var(--ink-soft);
+  transition: color 0.2s ease;
+}
+.hero__scroll::before {
+  content: "";
+  width: 56px;
+  height: 1px;
+  background: var(--cinnabar);
+}
+.hero__scroll:hover { color: var(--cinnabar); }
+
+/* 印章 */
+.seal {
+  position: relative;
+  display: inline-grid;
+  place-items: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  background: var(--cinnabar);
+  color: var(--paper);
+  font-family: var(--font-serif);
+  font-size: 0.72rem;
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: 0.04em;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  box-shadow: inset 0 0 0 1px rgba(245, 239, 227, 0.45), 0 0 18px -7px rgba(166, 43, 31, 0.8);
+  transform: rotate(-2deg);
+}
+.hero__seal {
+  width: 3.2rem;
+  height: 3.2rem;
+  font-size: 0.95rem;
+}
+
+/* 印面反光：朱砂方块上慢慢掠过的一道高光 */
+.seal::after,
+.riddle__word::after,
+.section__index::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(104deg,
+    rgba(255, 255, 255, 0) 38%,
+    rgba(255, 250, 235, 0.5) 50%,
+    rgba(255, 255, 255, 0) 62%);
+  background-size: 320% 100%;
+  background-repeat: no-repeat;
+  background-position: 150% 0;
+  pointer-events: none;
+}
+
+/* ============================================================
+   光效
+   纸有微光，灯有暖晕。所有光都克制，只用来托起朱砂与金色。
+   ============================================================ */
+
+/* 首屏：窗花背后的灯晕与放射光 */
+.hero__halo,
+.hero__rays {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+.hero__halo {
+  z-index: 0;
+  width: min(100%, 640px);
+  aspect-ratio: 1;
+  background: radial-gradient(circle,
+    rgba(255, 253, 246, 0.98) 0%,
+    rgba(255, 247, 226, 0.66) 22%,
+    rgba(216, 178, 72, 0.19) 44%,
+    rgba(166, 43, 31, 0.09) 60%,
+    rgba(166, 43, 31, 0) 74%);
+  filter: blur(16px);
+}
+.hero__rays {
+  z-index: 0;
+  width: min(110%, 700px);
+  aspect-ratio: 1;
+  background: repeating-conic-gradient(from 0deg,
+    rgba(201, 162, 39, 0.6) 0deg 1.3deg,
+    rgba(201, 162, 39, 0) 1.3deg 15deg);
+  -webkit-mask-image: radial-gradient(circle, transparent 20%, #000 40%, rgba(0, 0, 0, 0.4) 60%, transparent 76%);
+  mask-image: radial-gradient(circle, transparent 20%, #000 40%, rgba(0, 0, 0, 0.4) 60%, transparent 76%);
+  opacity: 0.3;
+  will-change: transform;
+}
+
+/* 首屏浮尘：被灯光照亮的纸屑 */
+.dust {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.dust i {
+  position: absolute;
+  left: var(--x);
+  bottom: 0;
+  width: var(--s);
+  height: var(--s);
+  border-radius: 50%;
+  background: radial-gradient(circle,
+    rgba(255, 255, 252, 1) 0%,
+    rgba(238, 205, 126, 0.9) 32%,
+    rgba(201, 162, 39, 0.4) 58%,
+    rgba(201, 162, 39, 0) 76%);
+  opacity: 0;
+}
+
+/* 章节分隔线上一道缓慢游走的光 */
+.section { position: relative; }
+.section::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 26%;
+  height: 1px;
+  background: linear-gradient(90deg,
+    rgba(201, 162, 39, 0) 0%,
+    rgba(201, 162, 39, 0.85) 34%,
+    rgba(255, 248, 224, 0.95) 50%,
+    rgba(166, 43, 31, 0.5) 66%,
+    rgba(166, 43, 31, 0) 100%);
+  opacity: 0;
+  transform: translateX(-110%);
+  pointer-events: none;
+}
+
+/* 纸面亮部：卡片与暗卡顶端承接的光 */
+.riddle__lantern svg {
+  filter: drop-shadow(0 0 9px rgba(201, 162, 39, 0.45));
+}
+.zodiac-wheel__hub {
+  padding: 12px 0;
+  border-radius: 50%;
+  background: radial-gradient(circle,
+    rgba(255, 253, 246, 0.96) 0%,
+    rgba(255, 250, 236, 0.52) 46%,
+    rgba(255, 250, 236, 0) 72%);
+}
+
+/* ============================================================
+   章节通用
+   ============================================================ */
+.section {
+  padding: var(--section-pad) 0;
+  border-top: 1px solid var(--rule);
+  scroll-margin-top: calc(var(--header-h) + 24px);
+}
+.section__head {
+  display: grid;
+  grid-template-columns: 52px minmax(0, 1fr);
+  gap: clamp(16px, 2vw, 28px);
+  margin-bottom: clamp(40px, 6vw, 72px);
+}
+.section__index {
+  position: relative;
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  transform-origin: center;
+  background: var(--cinnabar);
+  color: var(--paper);
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  box-shadow: inset 0 0 0 2px var(--cinnabar), inset 0 0 0 3px rgba(245, 239, 227, 0.55),
+    0 0 24px -9px rgba(166, 43, 31, 0.8);
+}
+.section__index::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border: 1px solid var(--cinnabar);
+  opacity: 0;
+  pointer-events: none;
+}
+.section__title {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.12em;
+}
+.section__lede {
+  max-width: 60ch;
+  margin-top: 14px;
+  color: var(--ink-soft);
+  line-height: 1.95;
+}
+
+/* ============================================================
+   壹 · 起源
+   ============================================================ */
+.origins-banner {
+  margin: 0 0 clamp(32px, 5vw, 56px);
+}
+.origins-banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border: 1px solid var(--rule);
+  background: var(--paper-deep);
+}
+.origins-banner figcaption {
+  margin-top: 8px;
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  color: var(--ink-soft);
+}
+.origins__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.55fr) minmax(220px, 0.65fr);
+  gap: clamp(32px, 5vw, 72px);
+  align-items: start;
+}
+.timeline { position: relative; }
+.timeline__item {
+  --line-x: 120px;
+  --dot-y: 39px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 92px 20px minmax(0, 1fr);
+  gap: 0 18px;
+  padding: 28px 0;
+}
+.timeline__item::before {
+  content: "";
+  position: absolute;
+  left: var(--line-x);
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: var(--rule);
+}
+.timeline__item:first-child::before { top: var(--dot-y); }
+.timeline__item:last-child::before { bottom: calc(100% - var(--dot-y)); }
+.timeline__era {
+  padding-top: 2px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--cinnabar);
+  text-align: right;
+  white-space: nowrap;
+}
+.timeline__dot {
+  position: relative;
+  z-index: 1;
+  justify-self: center;
+  width: 9px;
+  height: 9px;
+  margin-top: 7px;
+  border-radius: 50%;
+  background: var(--cinnabar);
+  box-shadow: 0 0 0 5px var(--paper);
+}
+.timeline__title {
+  font-size: 1.35rem;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+}
+.timeline__text {
+  max-width: 58ch;
+  margin-top: 8px;
+  font-size: 0.98rem;
+  line-height: 1.95;
+  color: var(--ink-soft);
+}
+.origins__aside {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(28px, 4vw, 48px);
+}
+.legend {
+  padding-top: 18px;
+  border-top: 2px solid var(--cinnabar);
+}
+.legend__label,
+.poem-panel__note-label {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  color: var(--cinnabar);
+}
+.legend__title {
+  margin-top: 6px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+.legend__text {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  line-height: 1.9;
+  color: var(--ink-soft);
+}
+.legend__figure {
+  max-width: 300px;
+  margin: 14px 0 16px;
+}
+.legend__figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border: 1px solid var(--rule);
+  background: var(--paper-deep);
+}
+.pullquote {
+  padding-left: 20px;
+  border-left: 1px solid var(--rule-strong);
+}
+.pullquote p {
+  font-size: 1.22rem;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  color: var(--ink);
+}
+.pullquote cite {
+  display: block;
+  margin-top: 10px;
+  font-family: var(--font-sans);
+  font-size: 0.74rem;
+  font-style: normal;
+  letter-spacing: 0.08em;
+  color: var(--ink-soft);
+}
+
+/* ============================================================
+   贰 · 习俗
+   ============================================================ */
+.customs { border-bottom: 1px solid var(--rule); }
+.custom {
+  position: relative;
+  display: grid;
+  grid-template-columns: 128px clamp(96px, 10vw, 148px) minmax(0, 1fr) 120px;
+  gap: 0 clamp(16px, 2vw, 28px);
+  align-items: center;
+  padding: 28px 0 28px 20px;
+  border-top: 1px solid var(--rule);
+}
+.custom::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--cinnabar);
+  transform: scaleY(0);
+  transform-origin: top center;
+  transition: transform 0.35s ease;
+}
+.custom:hover::before { transform: scaleY(1); }
+.custom__time {
+  padding-top: 0;
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  line-height: 1.7;
+  letter-spacing: 0.04em;
+  color: var(--ink-soft);
+}
+.custom__icon {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  overflow: hidden;
+  background: var(--paper-deep);
+  border: 1px solid var(--rule);
+  transition: border-color 0.25s ease;
+}
+.custom__icon::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(104deg,
+    rgba(255, 255, 255, 0) 34%,
+    rgba(255, 250, 234, 0.55) 48%,
+    rgba(255, 255, 255, 0) 62%);
+  transform: translateX(-130%);
+  transition: transform 0.9s cubic-bezier(0.3, 0.62, 0.2, 1);
+  pointer-events: none;
+}
+.custom__icon img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.custom__name {
+  font-size: 1.35rem;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+}
+.custom__desc {
+  max-width: 56ch;
+  margin-top: 6px;
+  font-size: 0.96rem;
+  line-height: 1.9;
+  color: var(--ink-soft);
+}
+.custom__meaning {
+  padding-top: 0;
+  font-size: 0.78rem;
+  line-height: 1.7;
+  letter-spacing: 0.08em;
+  color: var(--cinnabar);
+  text-align: right;
+}
+.customs-note,
+.patterns-note {
+  display: grid;
+  grid-template-columns: 40px minmax(0, 1fr);
+  gap: 12px;
+  align-items: start;
+  max-width: 70ch;
+  margin-top: 24px;
+  font-size: 0.84rem;
+  line-height: 1.85;
+  color: var(--ink-soft);
+}
+.customs-note__label,
+.patterns-note__label {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  background: var(--paper-deep);
+  color: var(--cinnabar);
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+/* ============================================================
+   叁 · 生肖
+   ============================================================ */
+.zodiac__grid {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.86fr) minmax(0, 1fr);
+  gap: clamp(28px, 5vw, 68px);
+  align-items: center;
+}
+.zodiac-wheel {
+  position: relative;
+  width: 100%;
+  max-width: 440px;
+  aspect-ratio: 1;
+  margin: 0 auto;
+}
+.zodiac-wheel__svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+.zodiac-wheel__hub {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 34%;
+  text-align: center;
+}
+.zodiac-wheel__char {
+  font-size: clamp(1.9rem, 4.4vw, 2.7rem);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  color: var(--cinnabar);
+}
+.zodiac-wheel__branch {
+  margin-top: 2px;
+  font-family: var(--font-sans);
+  font-size: 0.74rem;
+  letter-spacing: 0.3em;
+  color: var(--ink-soft);
+}
+.zodiac__btn {
+  position: absolute;
+  left: calc(50% + var(--x));
+  top: calc(50% + var(--y));
+  transform: translate(-50%, -50%);
+  display: grid;
+  place-items: center;
+  width: clamp(32px, 10%, 44px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-serif);
+  font-size: clamp(0.82rem, 1.5vw, 1rem);
+  font-weight: 600;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color 0.22s ease, color 0.22s ease, box-shadow 0.22s ease;
+}
+.zodiac__btn:nth-of-type(1) { --x: 0%; --y: -40%; }
+.zodiac__btn:nth-of-type(2) { --x: 20%; --y: -34.64%; }
+.zodiac__btn:nth-of-type(3) { --x: 34.64%; --y: -20%; }
+.zodiac__btn:nth-of-type(4) { --x: 40%; --y: 0%; }
+.zodiac__btn:nth-of-type(5) { --x: 34.64%; --y: 20%; }
+.zodiac__btn:nth-of-type(6) { --x: 20%; --y: 34.64%; }
+.zodiac__btn:nth-of-type(7) { --x: 0%; --y: 40%; }
+.zodiac__btn:nth-of-type(8) { --x: -20%; --y: 34.64%; }
+.zodiac__btn:nth-of-type(9) { --x: -34.64%; --y: 20%; }
+.zodiac__btn:nth-of-type(10) { --x: -40%; --y: 0%; }
+.zodiac__btn:nth-of-type(11) { --x: -34.64%; --y: -20%; }
+.zodiac__btn:nth-of-type(12) { --x: -20%; --y: -34.64%; }
+.zodiac__btn:hover { color: var(--cinnabar); box-shadow: 0 0 0 1px var(--cinnabar); }
+.zodiac__btn[aria-pressed="true"] {
+  background: var(--cinnabar);
+  color: var(--paper);
+  box-shadow: 0 0 0 3px var(--paper), 0 0 0 4px var(--cinnabar),
+    0 0 20px 2px rgba(166, 43, 31, 0.34);
+}
+.zodiac__panel { min-width: 0; }
+.zodiac__eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  color: var(--cinnabar);
+}
+.zodiac__title {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  margin-top: 6px;
+}
+.zodiac__name {
+  font-size: clamp(2rem, 3.6vw, 2.8rem);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.1em;
+}
+.zodiac__chip {
+  padding: 2px 10px;
+  border: 1px solid var(--rule-strong);
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  color: var(--ink-soft);
+}
+.zodiac__years {
+  margin-top: 8px;
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  color: var(--ink-soft);
+}
+.zodiac__note {
+  max-width: 42ch;
+  margin-top: 12px;
+  font-size: 0.98rem;
+  line-height: 1.95;
+  color: var(--ink-soft);
+}
+.zodiac__gz {
+  display: grid;
+  gap: 10px;
+  margin-top: clamp(20px, 3vw, 32px);
+  padding-top: 20px;
+  border-top: 1px solid var(--rule);
+}
+.zodiac__gz-row {
+  display: grid;
+  grid-template-columns: 46px minmax(0, 1fr);
+  gap: 12px;
+  align-items: baseline;
+}
+.zodiac__gz-label {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  color: var(--cinnabar);
+}
+.zodiac__gz-chars {
+  font-size: 0.98rem;
+  letter-spacing: 0.24em;
+  color: var(--ink);
+}
+.zodiac__gz-text {
+  max-width: 46ch;
+  margin-top: 4px;
+  font-size: 0.84rem;
+  line-height: 1.9;
+  color: var(--ink-soft);
+}
+
+/* ============================================================
+   肆 · 纹样
+   ============================================================ */
+.patterns {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--rule);
+  border: 1px solid var(--rule);
+}
+.pattern {
+  display: flex;
+  flex-direction: column;
+  padding: clamp(16px, 2vw, 28px);
+  background: var(--paper);
+  transition: background-color 0.3s ease;
+}
+.pattern__figure {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1;
+  margin-bottom: 14px;
+  color: var(--cinnabar);
+}
+.pattern__figure svg {
+  display: block;
+  width: 82%;
+  height: 82%;
+  overflow: visible;
+  transition: filter 0.35s ease;
+}
+.pattern__name {
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0.08em;
+}
+.pattern__hint {
+  margin-top: 3px;
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  color: var(--cinnabar);
+}
+.pattern__text {
+  margin-top: 9px;
+  font-size: 0.84rem;
+  line-height: 1.85;
+  color: var(--ink-soft);
+}
+
+/* ============================================================
+   伍 · 灯谜
+   ============================================================ */
+.riddles {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(14px, 2vw, 22px);
+}
+.riddle {
+  display: grid;
+  grid-template-columns: 50px minmax(0, 1fr);
+  gap: clamp(14px, 2vw, 20px);
+  padding: clamp(18px, 2.4vw, 26px);
+  border: 1px solid var(--rule);
+  background-color: var(--paper-light);
+  background-image: var(--paper-texture),
+    radial-gradient(90% 68% at 0% 0%, rgba(255, 253, 246, 0.9) 0%, rgba(255, 253, 246, 0) 62%);
+  transition: border-color 0.25s ease;
+}
+.riddle:hover { border-color: var(--rule-strong); }
+.riddle__lantern {
+  width: 50px;
+  color: var(--cinnabar);
+}
+.riddle__lantern svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+.riddle__body {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.riddle__q {
+  font-family: var(--font-kai);
+  font-size: clamp(1.08rem, 1.5vw, 1.3rem);
+  line-height: 1.75;
+  letter-spacing: 0.06em;
+  color: var(--ink);
+}
+.riddle__meta {
+  margin-top: 4px;
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  color: var(--ink-soft);
+}
+.riddle__toggle {
+  align-self: flex-start;
+  margin-top: 14px;
+  padding-bottom: 2px;
+  border-bottom: 1px solid var(--cinnabar);
+  font-family: var(--font-sans);
+  font-size: 0.74rem;
+  letter-spacing: 0.12em;
+  color: var(--cinnabar);
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+.riddle__toggle[aria-expanded="true"] {
+  color: var(--ink-soft);
+  border-bottom-color: var(--rule);
+}
+.riddle__answer {
+  margin-top: 12px;
+  padding-top: 14px;
+  border-top: 1px solid var(--rule);
+}
+.riddle__answer[hidden] { display: none; }
+.riddle__word {
+  position: relative;
+  display: inline-grid;
+  place-items: center;
+  width: 2.6rem;
+  height: 2.6rem;
+  background: var(--cinnabar);
+  color: var(--paper);
+  font-size: 1.35rem;
+  font-weight: 600;
+  line-height: 1;
+  box-shadow: inset 0 0 0 2px var(--cinnabar), inset 0 0 0 3px rgba(245, 239, 227, 0.5);
+}
+.riddle__why {
+  margin-top: 10px;
+  font-size: 0.84rem;
+  line-height: 1.9;
+  color: var(--ink-soft);
+}
+.riddle--note {
+  grid-template-columns: minmax(0, 1fr);
+  border-color: var(--ink);
+  background-color: var(--ink);
+  background-image: radial-gradient(126% 88% at 50% -18%,
+    rgba(201, 162, 39, 0.28) 0%,
+    rgba(201, 162, 39, 0.09) 40%,
+    rgba(201, 162, 39, 0) 66%);
+  color: var(--paper);
+  box-shadow: 0 30px 60px -46px rgba(28, 26, 23, 0.9);
+}
+.riddle--note:hover { border-color: var(--ink); }
+.riddle__note-label {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  color: var(--gold);
+}
+.riddle__note-title {
+  margin-top: 8px;
+  font-size: clamp(1.3rem, 1.8vw, 1.6rem);
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  color: var(--paper);
+}
+.riddle__note-text {
+  margin-top: 10px;
+  font-size: 0.88rem;
+  line-height: 1.95;
+  color: rgba(245, 239, 227, 0.78);
+}
+
+/* ============================================================
+   陆 · 诗词
+   ============================================================ */
+.poems__grid {
+  display: grid;
+  grid-template-columns: minmax(180px, 216px) minmax(0, 1fr);
+  gap: clamp(24px, 4vw, 56px);
+  align-items: start;
+}
+.poem-tabs {
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid var(--rule);
+}
+.poem-tab {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-left: -1px;
+  padding: 15px 0 15px 20px;
+  border-left: 2px solid transparent;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+.poem-tab:hover { color: var(--cinnabar); }
+.poem-tab[aria-selected="true"] {
+  border-left-color: var(--cinnabar);
+  color: var(--ink);
+}
+.poem-tab__title {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.08em;
+  color: var(--ink-soft);
+  transition: color 0.2s ease;
+}
+.poem-tab[aria-selected="true"] .poem-tab__title { color: var(--cinnabar); }
+.poem-tab__meta {
+  display: block;
+  margin-top: 3px;
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  line-height: 1.6;
+  letter-spacing: 0.06em;
+  color: var(--ink-soft);
+}
+.poem-panel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(24px, 3vw, 36px);
+  min-height: 520px;
+  padding: clamp(24px, 4vw, 56px);
+  background-color: var(--paper-light);
+  background-image: var(--paper-texture),
+    radial-gradient(120% 76% at 8% 0%, rgba(255, 253, 246, 0.95) 0%, rgba(255, 253, 246, 0) 56%);
+  border: 1px solid var(--rule);
+  box-shadow: 0 32px 70px -56px rgba(122, 28, 19, 0.55);
+}
+.poem-panel[hidden] { display: none; }
+.poem-panel__head {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.poem-panel__meta {
+  font-family: var(--font-sans);
+  font-size: 0.74rem;
+  letter-spacing: 0.1em;
+  color: var(--ink-soft);
+}
+.poem-panel__title {
+  font-size: 1.7rem;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+}
+.poem-panel__verse {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: clamp(16px, 3vw, 32px);
+}
+.poem-panel__seal {
+  flex: none;
+  width: 3.4rem;
+  height: 3.4rem;
+  margin-top: 2px;
+  font-size: 0.78rem;
+}
+.poem-lines {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-feature-settings: "vert" 1;
+  font-family: var(--font-kai);
+  font-size: clamp(1.35rem, 2.1vw, 1.75rem);
+  line-height: 2.2;
+  letter-spacing: 0.14em;
+  color: var(--ink);
+}
+.poem-line { display: block; }
+.poem-panel__note {
+  max-width: 58ch;
+  padding-top: 16px;
+  border-top: 1px solid var(--rule);
+}
+.poem-panel__note p:last-child {
+  margin-top: 6px;
+  font-size: 0.9rem;
+  line-height: 1.9;
+  color: var(--ink-soft);
+}
+
+/* ============================================================
+   页脚
+   ============================================================ */
+.site-footer {
+  border-top: 1px solid var(--rule);
+  margin-top: clamp(40px, 6vh, 72px);
+}
+.footer__inner {
+  max-width: var(--page-max);
+  margin: 0 auto;
+  padding: clamp(48px, 7vh, 80px) var(--gutter) 40px;
+}
+.footer__closing {
+  font-size: clamp(1.45rem, 3vw, 2.2rem);
+  font-weight: 600;
+  line-height: 1.6;
+  letter-spacing: 0.14em;
+}
+.footer__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(24px, 4vw, 56px);
+  margin-top: clamp(32px, 5vh, 56px);
+}
+.footer__label {
+  margin-bottom: 8px;
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  color: var(--cinnabar);
+}
+.footer__col p,
+.footer__links li {
+  font-size: 0.8rem;
+  line-height: 1.85;
+  color: var(--ink-soft);
+}
+.footer__links a {
+  border-bottom: 1px solid var(--rule);
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+.footer__links a:hover {
+  color: var(--cinnabar);
+  border-bottom-color: var(--cinnabar);
+}
+.footer__bottom {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: clamp(32px, 5vh, 56px);
+  padding-top: 16px;
+  border-top: 1px solid var(--rule);
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  color: var(--ink-soft);
+}
+.footer__top {
+  white-space: nowrap;
+  color: var(--cinnabar);
+  border-bottom: 1px solid transparent;
+}
+.footer__top:hover { border-bottom-color: var(--cinnabar); }
+
+/* ============================================================
+   动效：只在允许动效时启用
+   ============================================================ */
+@keyframes wf-draw { to { stroke-dashoffset: 0; } }
+@keyframes wf-fade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes wf-petals {
+  from { opacity: 0; transform: scale(0.92) rotate(-7deg); }
+  to { opacity: 1; transform: scale(1) rotate(0deg); }
+}
+@keyframes rise-in {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes seal-in {
+  from { opacity: 0; transform: rotate(-8deg) scale(0.9); }
+  to { opacity: 1; transform: rotate(-2deg) scale(1); }
+}
+@keyframes dot-in {
+  from { opacity: 0; transform: scale(0.4); }
+  to { opacity: 1; transform: scale(1); }
+}
+@keyframes row-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes ink-in {
+  from { opacity: 0; clip-path: inset(0 0 0 100%); }
+  to { opacity: 1; clip-path: inset(0); }
+}
+@keyframes ink-in-mobile {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes wf-breathe {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.022); }
+}
+@keyframes stamp-in {
+  0% { opacity: 0; transform: scale(1.35) rotate(-6deg); }
+  55% { opacity: 1; transform: scale(0.95) rotate(1deg); }
+  100% { opacity: 1; transform: scale(1) rotate(0); }
+}
+@keyframes rays-turn {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+@keyframes halo-pulse {
+  0%, 100% { opacity: 0.82; }
+  50% { opacity: 1; }
+}
+@keyframes dust-rise {
+  0% { opacity: 0; transform: translate3d(0, 0, 0) scale(0.5); }
+  12% { opacity: 0.9; }
+  72% { opacity: 0.42; }
+  100% { opacity: 0; transform: translate3d(var(--dx, 0px), -82vh, 0) scale(1.1); }
+}
+@keyframes rule-sweep {
+  0% { opacity: 0; transform: translateX(-110%); }
+  7% { opacity: 0.9; }
+  44% { opacity: 0.9; }
+  60%, 100% { opacity: 0; transform: translateX(330%); }
+}
+@keyframes ring-out {
+  0% { opacity: 0.8; transform: scale(1); }
+  100% { opacity: 0; transform: scale(2.15); }
+}
+@keyframes btn-pulse {
+  0%, 100% { box-shadow: 0 0 0 3px var(--paper), 0 0 0 4px var(--cinnabar), 0 0 12px 1px rgba(166, 43, 31, 0.2); }
+  50% { box-shadow: 0 0 0 3px var(--paper), 0 0 0 4px var(--cinnabar), 0 0 24px 6px rgba(166, 43, 31, 0.42); }
+}
+@keyframes sheen-sweep {
+  from { transform: translateX(-130%); }
+  to { transform: translateX(130%); }
+}
+@keyframes stamp-glint {
+  0% { background-position: 150% 0; }
+  14% { background-position: -60% 0; }
+  100% { background-position: -60% 0; }
+}
+@keyframes image-wipe {
+  from { clip-path: inset(0 100% 0 0); transform: scale(1.06); }
+  to { clip-path: inset(0); transform: scale(1); }
+}
+@keyframes seal-stamp {
+  0% { opacity: 0; transform: scale(1.6) rotate(-10deg); }
+  55% { opacity: 1; transform: scale(0.94) rotate(1deg); }
+  100% { opacity: 1; transform: scale(1) rotate(-2deg); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .wf-ring--outer {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    animation: wf-draw 1.5s cubic-bezier(0.4, 0, 0.2, 1) 0.1s forwards;
+  }
+  .wf-ring--dotted {
+    opacity: 0;
+    animation: wf-fade 0.9s ease 0.55s forwards;
+  }
+  .wf-petals {
+    transform-box: view-box;
+    transform-origin: 300px 300px;
+    opacity: 0;
+    animation: wf-petals 1.15s cubic-bezier(0.2, 0.7, 0.2, 1) 0.35s forwards;
+  }
+  .wf-center {
+    opacity: 0;
+    transform-box: view-box;
+    transform-origin: 300px 300px;
+    animation: wf-fade 0.8s ease 0.95s forwards,
+               wf-breathe 7s ease-in-out 1.8s infinite;
+  }
+  .hero__title-wrap { animation: rise-in 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) 0.35s both; }
+  .hero__lede { animation: rise-in 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) 0.48s both; }
+  .hero__aside { animation: rise-in 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) 0.62s both; }
+  .hero__scroll { animation: rise-in 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) 0.78s both; }
+  .hero__seal { animation: seal-in 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) 0.95s both; }
+
+  /* 光效 */
+  .hero__rays { animation: rays-turn 180s linear infinite; }
+  .hero__halo { animation: halo-pulse 9s ease-in-out infinite; }
+  .dust i { animation: dust-rise var(--t, 20s) linear var(--delay, 0s) infinite; }
+  .section::after { animation: rule-sweep 15s cubic-bezier(0.45, 0, 0.55, 1) infinite; }
+  #customs::after { animation-delay: 2.4s; }
+  #zodiac::after { animation-delay: 5.6s; }
+  #patterns::after { animation-delay: 8.2s; }
+  #riddles::after { animation-delay: 11.4s; }
+  #poems::after { animation-delay: 1.2s; }
+
+  /* 点亮瞬间：印章外扩光圈、生肖选中项呼吸、插画掠过光带 */
+  .section__index.is-stamped::after {
+    animation: ring-out 1.6s cubic-bezier(0.2, 0.7, 0.2, 1) 0.42s both;
+  }
+  .zodiac__btn[aria-pressed="true"] { animation: btn-pulse 3.4s ease-in-out infinite; }
+  .custom.is-revealed .custom__icon::after {
+    animation: sheen-sweep 1.15s cubic-bezier(0.3, 0.62, 0.2, 1) 0.12s;
+  }
+  .seal::after { animation: stamp-glint 7.5s ease-in-out 1.6s infinite; }
+  .riddle__word::after { animation: stamp-glint 6.2s ease-in-out 1s infinite; }
+  .section__index::before { animation: stamp-glint 9s ease-in-out 2.4s infinite; }
+
+  .section__index.is-stamped {
+    animation: stamp-in 0.55s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  }
+  .timeline__item.is-revealed .timeline__dot {
+    animation: dot-in 0.45s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  }
+  .custom.is-revealed {
+    animation: row-in 0.55s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  }
+  .custom.is-revealed .custom__icon img {
+    animation: image-wipe 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  }
+  .pattern.is-revealed .pattern__figure {
+    animation: dot-in 0.5s cubic-bezier(0.2, 0.7, 0.2, 1) 0.12s both;
+  }
+  .poem-panel.is-switching {
+    animation: ink-in 0.42s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+  }
+  .poem-panel.is-switching .poem-panel__seal {
+    animation: seal-stamp 0.55s cubic-bezier(0.2, 0.8, 0.2, 1) 0.12s both;
+  }
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .hero__visual:hover .window-flower {
+    transform: rotate(2.5deg) scale(1.015);
+  }
+  .custom:hover .custom__icon {
+    border-color: var(--cinnabar);
+  }
+  .custom:hover .custom__icon::after {
+    transform: translateX(130%);
+  }
+  .pattern:hover {
+    background: var(--paper-light);
+  }
+  .pattern:hover .pattern__figure {
+    color: var(--cinnabar-deep);
+  }
+  .pattern:hover .pattern__figure svg {
+    filter: drop-shadow(0 0 10px rgba(166, 43, 31, 0.36));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ============================================================
+   响应式
+   ============================================================ */
+@media (max-width: 1100px) {
+  .page-shell { grid-template-columns: minmax(0, 1fr); }
+  .rail { display: none; }
+}
+
+@media (max-width: 900px) {
+  .hero__grid {
+    grid-template-columns: minmax(220px, 1fr) auto;
+    gap: clamp(24px, 4vw, 40px);
+  }
+  .hero__aside {
+    grid-column: 1 / -1;
+    max-width: none;
+    padding-left: 0;
+    padding-top: 16px;
+    border-left: 0;
+    border-top: 1px solid var(--rule);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 28px;
+  }
+  .hero__aside .hero__note {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: 0;
+  }
+  .origins__grid { grid-template-columns: minmax(0, 1fr); }
+  .origins__aside {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(24px, 4vw, 40px);
+    padding-top: 8px;
+    border-top: 1px solid var(--rule);
+  }
+  .custom {
+    grid-template-columns: 100px clamp(88px, 11vw, 110px) minmax(0, 1fr);
+    grid-template-areas:
+      "time icon body"
+      "time icon meaning";
+    align-items: center;
+  }
+  .custom__time { grid-area: time; }
+  .custom__icon { grid-area: icon; }
+  .custom__body { grid-area: body; }
+  .custom__meaning {
+    grid-area: meaning;
+    padding-top: 8px;
+    text-align: left;
+  }
+  .zodiac__grid { grid-template-columns: minmax(0, 1fr); }
+  .zodiac-wheel { max-width: 380px; }
+  .zodiac__note { max-width: none; }
+  .patterns { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 767px) {
+  :root { --header-h: 60px; }
+  .brand__sub { display: none; }
+  .site-nav { gap: 16px; }
+  .site-nav a { font-size: 0.75rem; letter-spacing: 0.08em; }
+
+  .hero {
+    min-height: 0;
+    padding-top: 32px;
+  }
+  .hero__grid {
+    grid-template-columns: minmax(0, 1fr);
+    justify-items: center;
+    gap: 28px;
+  }
+  .hero__visual { width: 100%; }
+  .window-flower { width: min(74vw, 380px); }
+  .hero__titles {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  .hero__title-wrap {
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    gap: 14px;
+  }
+  .hero__title {
+    writing-mode: horizontal-tb;
+    font-size: clamp(3.6rem, 16vw, 5.4rem);
+  }
+  .hero__sub {
+    writing-mode: horizontal-tb;
+    padding-top: 0;
+    font-size: 1.4rem;
+  }
+  .hero__lede {
+    writing-mode: horizontal-tb;
+    padding-top: 0;
+    order: -1;
+    text-align: center;
+    font-size: 0.86rem;
+    letter-spacing: 0.18em;
+  }
+  .hero__seal { align-self: center; }
+  .hero__aside {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+  .hero__aside .hero__note {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid var(--rule);
+  }
+  .hero__scroll {
+    align-self: flex-start;
+    margin-top: 28px;
+  }
+
+  .section__head { grid-template-columns: 38px minmax(0, 1fr); gap: 14px; }
+  .section__index { width: 36px; height: 36px; font-size: 0.92rem; }
+
+  .timeline__item {
+    --line-x: 88px;
+    --dot-y: 32px;
+    grid-template-columns: 66px 16px minmax(0, 1fr);
+    gap: 0 10px;
+    padding: 22px 0;
+  }
+  .timeline__era { font-size: 0.82rem; }
+  .timeline__title { font-size: 1.18rem; }
+  .timeline__text { font-size: 0.92rem; }
+  .origins__aside { grid-template-columns: minmax(0, 1fr); }
+
+  .custom {
+    grid-template-columns: 80px minmax(0, 1fr);
+    grid-template-areas:
+      "icon time"
+      "icon body"
+      "icon meaning";
+    gap: 0 12px;
+    padding: 22px 0;
+    align-items: start;
+  }
+  .custom__time { padding-top: 0; }
+  .custom__icon {
+    width: 80px;
+    height: 80px;
+    margin-top: 2px;
+    align-self: center;
+  }
+  .custom__meaning { padding-top: 6px; }
+  .customs-note { grid-template-columns: 30px minmax(0, 1fr); }
+
+  .zodiac-wheel { max-width: 320px; }
+  .zodiac__title { gap: 10px; }
+  .zodiac__gz-row { grid-template-columns: 42px minmax(0, 1fr); }
+  .zodiac__gz-chars { font-size: 0.92rem; letter-spacing: 0.16em; }
+
+  .patterns { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .pattern { padding: 16px 14px; }
+  .pattern__figure { margin-bottom: 10px; }
+  .pattern__name { font-size: 1.05rem; }
+  .pattern__text { font-size: 0.8rem; }
+
+  .riddles { grid-template-columns: minmax(0, 1fr); }
+  .riddle { grid-template-columns: 40px minmax(0, 1fr); padding: 20px 18px; }
+  .riddle__lantern { width: 40px; }
+
+  .poems__grid { grid-template-columns: minmax(0, 1fr); }
+  .poem-tabs {
+    flex-direction: row;
+    overflow-x: auto;
+    border-left: 0;
+    border-bottom: 1px solid var(--rule);
+    scrollbar-width: thin;
+  }
+  .poem-tab {
+    flex: none;
+    width: auto;
+    margin-left: 0;
+    padding: 10px 12px;
+    border-left: 0;
+    border-bottom: 2px solid transparent;
+    white-space: nowrap;
+  }
+  .poem-tab[aria-selected="true"] { border-bottom-color: var(--cinnabar); }
+  .poem-tab__title { font-size: 1rem; }
+  .poem-tab__meta { display: none; }
+  .poem-panel {
+    min-height: 0;
+    padding: 24px 20px;
+    gap: 24px;
+  }
+  .poem-panel__title { font-size: 1.45rem; }
+  .poem-panel__verse {
+    justify-content: flex-start;
+    gap: 14px;
+  }
+  .poem-lines {
+    writing-mode: horizontal-tb;
+    text-orientation: mixed;
+    font-size: 1.25rem;
+    line-height: 2.1;
+    letter-spacing: 0.1em;
+  }
+  .poem-line { display: block; }
+  .poem-panel__seal {
+    width: 2.8rem;
+    height: 2.8rem;
+    font-size: 0.68rem;
+  }
+
+  .footer__grid { grid-template-columns: minmax(0, 1fr); }
+  .footer__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 520px) {
+  .site-nav { gap: 12px; }
+  .site-nav a { font-size: 0.72rem; }
+  .section__title { letter-spacing: 0.08em; }
+  .hero__date { font-size: 1rem; }
+  .custom__name { font-size: 1.2rem; }
+  .timeline__item {
+    --line-x: 78px;
+    grid-template-columns: 56px 16px minmax(0, 1fr);
+  }
+  .timeline__era { font-size: 0.76rem; }
+}
+
+@media (max-width: 380px) {
+  .poem-tab { padding: 10px 7px; }
+}
+
+@media (prefers-reduced-motion: no-preference) and (max-width: 767px) {
+  .poem-panel.is-switching { animation-name: ink-in-mobile; }
+}
+
+/* ============================================================
+   工具
+   ============================================================ */
+.svg-sprite {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">跳到正文</a>
+
+<!-- 图标库：原创线描 SVG -->
+<svg class="svg-sprite" aria-hidden="true" focusable="false">
+  <symbol id="i-broom" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M16.8 3.2 10.6 10.4"/>
+    <path d="M10.8 9.8c-2.6.4-4.4 2-5.5 4.8l3.1 3.1c2.8-1.1 4.4-2.9 4.8-5.5Z"/>
+    <path d="m6.4 13.6 3 3M7.8 12.1l3 3"/>
+    <path d="M5 16.4 3.4 20.6 7.6 19"/>
+  </symbol>
+  <symbol id="i-couplet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 3h16v3H4z"/>
+    <path d="M5 7h4v14H5zM15 7h4v14h-4z"/>
+    <path d="M7 10v2M7 14v2M17 10v2M17 14v2"/>
+    <path d="M10 9h4v6h-4z"/>
+  </symbol>
+  <symbol id="i-scissors" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="6" cy="18" r="2.4"/>
+    <circle cx="18" cy="18" r="2.4"/>
+    <path d="M8 16.2 18.4 4M16 16.2 5.6 4"/>
+    <path d="m12 10.5 1.6 1.6-1.6 1.6-1.6-1.6Z"/>
+  </symbol>
+  <symbol id="i-fish" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M3.2 12c2.9-3.9 7.4-3.9 10.3 0-2.9 3.9-7.4 3.9-10.3 0Z"/>
+    <path d="M13.5 12 18.2 8.4v7.2Z"/>
+    <circle cx="7" cy="11.2" r=".8"/>
+    <path d="M9 9.6c.9.8 1.3 1.6 1.3 2.4S9.9 13.6 9 14.4"/>
+  </symbol>
+  <symbol id="i-candle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 2.4c1.9 2.5 2.1 4.1 0 5.8-2.1-1.7-1.9-3.3 0-5.8Z"/>
+    <path d="M9.2 10.2h5.6V20H9.2z"/>
+    <path d="M12 8.2v2M7 21h10"/>
+    <path d="M9.2 14h5.6" opacity=".55"/>
+  </symbol>
+  <symbol id="i-bow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="8" cy="4.8" r="1.9"/>
+    <circle cx="16" cy="4.8" r="1.9"/>
+    <path d="M4.8 20c0-3.8 1.3-6.6 3.2-8.2M19.2 20c0-3.8-1.3-6.6-3.2-8.2"/>
+    <path d="M8 12.2c1.1 1.4 1.8 3.2 2 5.4M16 12.2c-1.1 1.4-1.8 3.2-2 5.4"/>
+    <path d="M9.5 16h5"/>
+  </symbol>
+  <symbol id="i-dragon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M3.5 15.5c1.4-4.2 4.3-6.7 7.8-6.7 2.5 0 4.4 1.4 5.4 3.8"/>
+    <path d="M16.7 12.6c1.7 0 3 1.2 3 2.8s-1.3 2.8-3 2.8c-1.2 0-2.2-.7-2.7-1.7"/>
+    <path d="M8 9.2 5.8 5.8M12 8.4l.9-3.4M15.8 9.4l2.4-2.4"/>
+    <circle cx="14.8" cy="14.8" r=".8"/>
+    <path d="M3.8 18.6c1.8-.9 3.3-.9 4.8 0M7.6 20.4c1.5-.8 2.9-.8 4.4 0"/>
+  </symbol>
+  <symbol id="i-lantern" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 2.5v1.8M9.2 4.3h5.6"/>
+    <path d="M6.8 6.8h10.4l1 5.2-1 5.2H6.8l-1-5.2 1-5.2Z"/>
+    <path d="M12 6.8v10.4M9 20.2h6M12 20.2v1.6"/>
+    <path d="M8.4 9.2c-.5 1.8-.5 3.8 0 5.6M15.6 9.2c.5 1.8.5 3.8 0 5.6" opacity=".55"/>
+  </symbol>
+</svg>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="#top" aria-label="回到页面开头">
+      <span class="brand__mark" aria-hidden="true"></span>
+      <span>春节<span class="brand__sub"> · 岁首</span></span>
+    </a>
+    <nav class="site-nav" aria-label="章节导航">
+      <a href="#origins" data-nav="origins">起源</a>
+      <a href="#customs" data-nav="customs">习俗</a>
+      <a href="#zodiac" data-nav="zodiac">生肖</a>
+      <a href="#patterns" data-nav="patterns">纹样</a>
+      <a href="#riddles" data-nav="riddles">灯谜</a>
+      <a href="#poems" data-nav="poems">诗词</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-shell">
+  <aside class="rail" aria-label="阅读进度与章节快捷导航">
+    <div class="rail__track" aria-hidden="true"><span class="rail__progress"></span><span class="rail__spark"></span></div>
+    <nav class="rail__nav" aria-label="章节快捷导航">
+      <a href="#origins" data-nav="origins">起源</a>
+      <a href="#customs" data-nav="customs">习俗</a>
+      <a href="#zodiac" data-nav="zodiac">生肖</a>
+      <a href="#patterns" data-nav="patterns">纹样</a>
+      <a href="#riddles" data-nav="riddles">灯谜</a>
+      <a href="#poems" data-nav="poems">诗词</a>
+    </nav>
+  </aside>
+
+  <main id="main" tabindex="-1">
+    <!-- ========== 首屏 ========== -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero__grid">
+        <div class="hero__visual">
+          <span class="hero__halo" aria-hidden="true"></span>
+          <span class="hero__rays" aria-hidden="true"></span>
+          <svg class="window-flower" viewBox="0 0 600 600" role="img" aria-labelledby="wf-title" focusable="false">
+            <title id="wf-title">圆形剪纸窗花，中心是一个春字</title>
+            <defs>
+              <path id="wf-petal-solid" d="M300 62C334 116 352 156 300 214 248 156 266 116 300 62ZM300 92C318 130 326 154 300 184 274 154 282 130 300 92Z" fill="var(--cinnabar)" fill-rule="evenodd"/>
+              <g id="wf-petal-line" fill="none" stroke="var(--gold)" stroke-width="1.4" stroke-linecap="round">
+                <path d="M300 62C334 116 352 156 300 214 248 156 266 116 300 62Z"/>
+                <path d="M300 78V198" stroke-width="1" opacity=".75"/>
+              </g>
+              <g id="wf-petals">
+                <use href="#wf-petal-solid" transform="rotate(0 300 300)"/>
+                <use href="#wf-petal-line" transform="rotate(30 300 300)"/>
+                <use href="#wf-petal-solid" transform="rotate(60 300 300)"/>
+                <use href="#wf-petal-line" transform="rotate(90 300 300)"/>
+                <use href="#wf-petal-solid" transform="rotate(120 300 300)"/>
+                <use href="#wf-petal-line" transform="rotate(150 300 300)"/>
+                <use href="#wf-petal-solid" transform="rotate(180 300 300)"/>
+                <use href="#wf-petal-line" transform="rotate(210 300 300)"/>
+                <use href="#wf-petal-solid" transform="rotate(240 300 300)"/>
+                <use href="#wf-petal-line" transform="rotate(270 300 300)"/>
+                <use href="#wf-petal-solid" transform="rotate(300 300 300)"/>
+                <use href="#wf-petal-line" transform="rotate(330 300 300)"/>
+              </g>
+            </defs>
+            <circle class="wf-ring wf-ring--outer" cx="300" cy="300" r="282" fill="none" stroke="var(--cinnabar)" stroke-width="1.6" pathLength="1"/>
+            <circle class="wf-ring wf-ring--dotted" cx="300" cy="300" r="258" fill="none" stroke="var(--celadon)" stroke-width="1.4" stroke-dasharray="2 65"/>
+            <use href="#wf-petals" class="wf-petals"/>
+            <g class="wf-center">
+              <circle cx="300" cy="300" r="120" fill="var(--paper-light)" stroke="var(--cinnabar)" stroke-width="1.6"/>
+              <circle cx="300" cy="300" r="111" fill="none" stroke="var(--gold)" stroke-width="1"/>
+              <text class="wf-char" x="300" y="300" text-anchor="middle" dominant-baseline="central">春</text>
+            </g>
+          </svg>
+        </div>
+
+        <div class="hero__titles">
+          <div class="hero__title-wrap">
+            <h1 class="hero__title" id="hero-title">春节</h1>
+            <p class="hero__sub">岁首</p>
+            <span class="seal hero__seal" aria-hidden="true">岁首</span>
+          </div>
+          <p class="hero__lede">一岁之首<br>万象更新</p>
+        </div>
+
+        <aside class="hero__aside">
+          <p class="hero__date">农历正月初一</p>
+          <p class="hero__desc">中国人庆祝传统新年的社会实践</p>
+          <p class="hero__note">2024 年 12 月列入联合国教科文组织人类非物质文化遗产代表作名录</p>
+        </aside>
+      </div>
+      <a class="hero__scroll" href="#origins">向下阅读</a>
+
+      <div class="dust" aria-hidden="true">
+        <i style="--x:6%;--s:4px;--t:24s;--delay:0s;--dx:22px"></i>
+        <i style="--x:14%;--s:2px;--t:18s;--delay:3.5s;--dx:-16px"></i>
+        <i style="--x:23%;--s:3px;--t:27s;--delay:7s;--dx:30px"></i>
+        <i style="--x:31%;--s:5px;--t:31s;--delay:1.5s;--dx:-24px"></i>
+        <i style="--x:39%;--s:2px;--t:21s;--delay:9s;--dx:14px"></i>
+        <i style="--x:47%;--s:3px;--t:26s;--delay:5.2s;--dx:-28px"></i>
+        <i style="--x:54%;--s:4px;--t:33s;--delay:12s;--dx:18px"></i>
+        <i style="--x:62%;--s:2px;--t:19s;--delay:2.8s;--dx:-12px"></i>
+        <i style="--x:69%;--s:5px;--t:29s;--delay:8.4s;--dx:26px"></i>
+        <i style="--x:76%;--s:3px;--t:23s;--delay:4.6s;--dx:-20px"></i>
+        <i style="--x:83%;--s:2px;--t:20s;--delay:11s;--dx:16px"></i>
+        <i style="--x:89%;--s:4px;--t:28s;--delay:6.2s;--dx:-26px"></i>
+        <i style="--x:94%;--s:3px;--t:22s;--delay:13.5s;--dx:20px"></i>
+        <i style="--x:70%;--s:2px;--t:34s;--delay:16s;--dx:-32px"></i>
+      </div>
+    </section>
+
+    <!-- ========== 壹 · 起源 ========== -->
+    <section class="section" id="origins" aria-labelledby="origins-title">
+      <header class="section__head">
+        <span class="section__index" aria-hidden="true" data-stamp>壹</span>
+        <div>
+          <h2 class="section__title" id="origins-title">起源</h2>
+          <p class="section__lede">春节起源于上古岁首祈岁祭祀，至今已有三千余年，是中华民族最隆重的传统节日。</p>
+        </div>
+      </header>
+
+      <figure class="origins-banner">
+        <img src="assets/origins-ritual.webp" alt="上古岁首祈年场景插画：群山、红日、祭台与手持谷穗的人群" width="1600" height="900" loading="lazy" decoding="async">
+        <figcaption>岁首祈年 · 插画</figcaption>
+      </figure>
+
+      <div class="origins__grid">
+        <ol class="timeline">
+          <li class="timeline__item" data-reveal>
+            <span class="timeline__era">上古</span>
+            <span class="timeline__dot" aria-hidden="true"></span>
+            <div class="timeline__body">
+              <h3 class="timeline__title">岁首祈年</h3>
+              <p class="timeline__text">殷商时期，年头岁尾已有祭神祭祖的活动。岁首的日期随历法不同而变动，但辞旧迎新的愿望始终如一。</p>
+            </div>
+          </li>
+          <li class="timeline__item" data-reveal>
+            <span class="timeline__era">前 104 年</span>
+            <span class="timeline__dot" aria-hidden="true"></span>
+            <div class="timeline__body">
+              <h3 class="timeline__title">太初历定岁首</h3>
+              <p class="timeline__text">汉武帝颁行《太初历》，确立以夏历正月初一为岁首。此后两千余年，正月初一作为岁首的传统基本沿用。</p>
+            </div>
+          </li>
+          <li class="timeline__item" data-reveal>
+            <span class="timeline__era">1914 年</span>
+            <span class="timeline__dot" aria-hidden="true"></span>
+            <div class="timeline__body">
+              <h3 class="timeline__title">“春节”定名</h3>
+              <p class="timeline__text">辛亥革命后改用公历，农历正月初一被定名为“春节”。1949 年 9 月 27 日，春节成为法定节假日。</p>
+            </div>
+          </li>
+          <li class="timeline__item" data-reveal>
+            <span class="timeline__era">2006 年</span>
+            <span class="timeline__dot" aria-hidden="true"></span>
+            <div class="timeline__body">
+              <h3 class="timeline__title">国家级非遗</h3>
+              <p class="timeline__text">5 月 20 日，春节民俗列入第一批国家级非物质文化遗产名录。</p>
+            </div>
+          </li>
+          <li class="timeline__item" data-reveal>
+            <span class="timeline__era">2024 年</span>
+            <span class="timeline__dot" aria-hidden="true"></span>
+            <div class="timeline__body">
+              <h3 class="timeline__title">世界非遗</h3>
+              <p class="timeline__text">12 月 4 日，“春节——中国人庆祝传统新年的社会实践”列入联合国教科文组织人类非物质文化遗产代表作名录。至此，中国共有 44 个项目列入 UNESCO 非遗名录、名册，居世界第一。</p>
+            </div>
+          </li>
+        </ol>
+
+        <aside class="origins__aside" aria-label="年兽传说与诗句">
+          <div class="legend">
+            <p class="legend__label">民间传说</p>
+            <figure class="legend__figure">
+              <img src="assets/nian-beast.webp" alt="年兽插画：狮形独角神兽，朱砂红与墨色，背景为祥云" width="720" height="900" loading="lazy" decoding="async">
+            </figure>
+            <h3 class="legend__title">年兽</h3>
+            <p class="legend__text">相传年兽每逢岁末出没，惧红、惧火光、惧响声。于是人们贴红纸、燃爆竹、守岁待旦。这是民间传说，不是信史，却解释了年俗里最热闹的那部分。</p>
+          </div>
+          <blockquote class="pullquote">
+            <p>爆竹声中一岁除，春风送暖入屠苏。</p>
+            <cite>王安石《元日》</cite>
+          </blockquote>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ========== 贰 · 习俗 ========== -->
+    <section class="section" id="customs" aria-labelledby="customs-title">
+      <header class="section__head">
+        <span class="section__index" aria-hidden="true" data-stamp>贰</span>
+        <div>
+          <h2 class="section__title" id="customs-title">习俗</h2>
+          <p class="section__lede">从腊月到正月十五，一套完整的年俗，把辞旧与迎新安放在每一天里。</p>
+        </div>
+      </header>
+
+      <ol class="customs">
+        <li class="custom" data-reveal>
+          <p class="custom__time">腊月二十四</p>
+          <span class="custom__icon" aria-hidden="true"><img src="assets/custom-saochen.webp" alt="" width="600" height="600" loading="lazy" decoding="async"></span>
+          <div class="custom__body">
+            <h3 class="custom__name">扫尘</h3>
+            <p class="custom__desc">“二十四，掸尘扫房子。”扫去旧尘，也扫去一年的晦气，取除旧布新之意。</p>
+          </div>
+          <p class="custom__meaning">除旧布新</p>
+        </li>
+        <li class="custom" data-reveal>
+          <p class="custom__time">腊月二十八、九</p>
+          <span class="custom__icon" aria-hidden="true"><img src="assets/custom-chunlian.webp" alt="" width="600" height="600" loading="lazy" decoding="async"></span>
+          <div class="custom__body">
+            <h3 class="custom__name">贴春联、福字</h3>
+            <p class="custom__desc">春联由古代桃符演变而来。福字倒贴多用于水缸、柜子，取“福到”谐音；大门传统上正贴。</p>
+          </div>
+          <p class="custom__meaning">迎春纳福</p>
+        </li>
+        <li class="custom" data-reveal>
+          <p class="custom__time">腊月</p>
+          <span class="custom__icon" aria-hidden="true"><img src="assets/custom-chuanghua.webp" alt="" width="600" height="600" loading="lazy" decoding="async"></span>
+          <div class="custom__body">
+            <h3 class="custom__name">剪窗花</h3>
+            <p class="custom__desc">红纸在剪刀下变成花鸟、福禄寿。贴上窗，屋子就有了喜气。</p>
+          </div>
+          <p class="custom__meaning">纳福迎祥</p>
+        </li>
+        <li class="custom" data-reveal>
+          <p class="custom__time">除夕</p>
+          <span class="custom__icon" aria-hidden="true"><img src="assets/custom-nianyefan.webp" alt="" width="600" height="600" loading="lazy" decoding="async"></span>
+          <div class="custom__body">
+            <h3 class="custom__name">年夜饭</h3>
+            <p class="custom__desc">阖家围坐的团圆饭。鱼寓意“年年有余”，常留头尾；饺子形似元宝，取“更岁交子”；年糕寓意“年年高”。</p>
+          </div>
+          <p class="custom__meaning">阖家团圆</p>
+        </li>
+        <li class="custom" data-reveal>
+          <p class="custom__time">除夕</p>
+          <span class="custom__icon" aria-hidden="true"><img src="assets/custom-shousui.webp" alt="" width="600" height="600" loading="lazy" decoding="async"></span>
+          <div class="custom__body">
+            <h3 class="custom__name">守岁</h3>
+            <p class="custom__desc">晋代已有此俗，唐宋盛行。家人围坐通宵，辞旧迎新；长辈给晚辈压岁钱，压“祟”保平安。</p>
+          </div>
+          <p class="custom__meaning">辞旧迎新</p>
+        </li>
+        <li class="custom" data-reveal>
+          <p class="custom__time">正月初一</p>
+          <span class="custom__icon" aria-hidden="true"><img src="assets/custom-bainian.webp" alt="" width="600" height="600" loading="lazy" decoding="async"></span>
+          <div class="custom__body">
+            <h3 class="custom__name">拜年</h3>
+            <p class="custom__desc">穿上新衣，走亲访友。晚辈先向长辈拜年，长辈受拜后分给压岁钱；传统还有投递名帖的习俗。</p>
+          </div>
+          <p class="custom__meaning">互致祝福</p>
+        </li>
+        <li class="custom" data-reveal>
+          <p class="custom__time">正月初一至十五</p>
+          <span class="custom__icon" aria-hidden="true"><img src="assets/custom-wulong.webp" alt="" width="600" height="600" loading="lazy" decoding="async"></span>
+          <div class="custom__body">
+            <h3 class="custom__name">舞龙舞狮</h3>
+            <p class="custom__desc">龙象征吉祥勇猛，狮喻示力量与豪迈。锣鼓声中，人们祈求风调雨顺、五谷丰登。</p>
+          </div>
+          <p class="custom__meaning">祈岁纳吉</p>
+        </li>
+        <li class="custom" data-reveal>
+          <p class="custom__time">正月十五</p>
+          <span class="custom__icon" aria-hidden="true"><img src="assets/custom-yuanxiao.webp" alt="" width="600" height="600" loading="lazy" decoding="async"></span>
+          <div class="custom__body">
+            <h3 class="custom__name">闹元宵</h3>
+            <p class="custom__desc">北方“滚”元宵、南方“包”汤圆。赏花灯、猜灯谜，春节至此收尾。</p>
+          </div>
+          <p class="custom__meaning">灯火收年</p>
+        </li>
+      </ol>
+
+      <p class="customs-note">
+        <span class="customs-note__label" aria-hidden="true">注</span>
+        <span>传统燃爆竹驱邪迎祥；如今许多城市禁燃，电子鞭炮与灯会延续着年味。</span>
+      </p>
+    </section>
+
+    <!-- ========== 叁 · 生肖 ========== -->
+    <section class="section" id="zodiac" aria-labelledby="zodiac-title">
+      <header class="section__head">
+        <span class="section__index" aria-hidden="true" data-stamp>叁</span>
+        <div>
+          <h2 class="section__title" id="zodiac-title">生肖</h2>
+          <p class="section__lede">十二种动物配十二地支，六十年一循环。点一点轮盘，看每个属相拴在哪一个时辰上。</p>
+        </div>
+      </header>
+
+      <div class="zodiac__grid">
+        <div class="zodiac-wheel">
+          <svg class="zodiac-wheel__svg" viewBox="0 0 600 600" aria-hidden="true" focusable="false">
+            <circle cx="300" cy="300" r="286" fill="none" stroke="var(--cinnabar)" stroke-width="1.4" opacity=".5"/>
+            <circle cx="300" cy="300" r="272" fill="none" stroke="var(--celadon)" stroke-width="1.2" stroke-dasharray="2 22"/>
+            <circle cx="300" cy="300" r="214" fill="none" stroke="var(--rule-strong)" stroke-width="1"/>
+            <circle cx="300" cy="300" r="196" fill="none" stroke="var(--rule)" stroke-width="0.8"/>
+            <g stroke="var(--gold)" stroke-width="1" opacity=".4" stroke-linecap="round">
+              <line x1="300" y1="100" x2="300" y2="170"/>
+              <line x1="300" y1="100" x2="300" y2="170" transform="rotate(30 300 300)"/>
+              <line x1="300" y1="100" x2="300" y2="170" transform="rotate(60 300 300)"/>
+              <line x1="300" y1="100" x2="300" y2="170" transform="rotate(90 300 300)"/>
+              <line x1="300" y1="100" x2="300" y2="170" transform="rotate(120 300 300)"/>
+              <line x1="300" y1="100" x2="300" y2="170" transform="rotate(150 300 300)"/>
+              <line x1="300" y1="100" x2="300" y2="170" transform="rotate(180 300 300)"/>
+              <line x1="300" y1="100" x2="300" y2="170" transform="rotate(210 300 300)"/>
+              <line x1="300" y1="100" x2="300" y2="170" transform="rotate(240 300 300)"/>
+              <line x1="300" y1="100" x2="300" y2="170" transform="rotate(270 300 300)"/>
+              <line x1="300" y1="100" x2="300" y2="170" transform="rotate(300 300 300)"/>
+              <line x1="300" y1="100" x2="300" y2="170" transform="rotate(330 300 300)"/>
+            </g>
+          </svg>
+
+          <div class="zodiac-wheel__hub" aria-hidden="true">
+            <p class="zodiac-wheel__char" id="zodiac-hub-char">龙</p>
+            <p class="zodiac-wheel__branch" id="zodiac-hub-branch">辰</p>
+          </div>
+
+          <button class="zodiac__btn" type="button" data-zodiac="鼠" data-branch="子" data-years="2020、2008、1996" data-note="十二生肖之首。子时是夜半，正是鼠最活动的时刻，所以鼠配子。取机敏、繁衍之意。" aria-pressed="false">鼠</button>
+          <button class="zodiac__btn" type="button" data-zodiac="牛" data-branch="丑" data-years="2021、2009、1997" data-note="丑时是凌晨一点到三点，农家起身喂牛。牛象征勤恳与丰收，春耕由此开始。" aria-pressed="false">牛</button>
+          <button class="zodiac__btn" type="button" data-zodiac="虎" data-branch="寅" data-years="2022、2010、1998" data-note="寅时三到五点，老虎最凶。虎为百兽之王，取勇猛之意，民间也用它镇宅辟邪。" aria-pressed="false">虎</button>
+          <button class="zodiac__btn" type="button" data-zodiac="兔" data-branch="卯" data-years="2023、2011、1999" data-note="卯时五到七点，玉兔未落，月亮还在天上。兔因此配卯，取温润与长寿之意。" aria-pressed="false">兔</button>
+          <button class="zodiac__btn" type="button" data-zodiac="龙" data-branch="辰" data-years="2024、2012、2000" data-note="辰时七到九点，传说群龙行雨。龙是十二生肖里唯一虚构的动物，取尊贵、祥瑞之意。" aria-pressed="true">龙</button>
+          <button class="zodiac__btn" type="button" data-zodiac="蛇" data-branch="巳" data-years="2025、2013、2001" data-note="巳时九到十一点，蛇开始出洞。民间称蛇为“小龙”，取灵动、绵长之意。" aria-pressed="false">蛇</button>
+          <button class="zodiac__btn" type="button" data-zodiac="马" data-branch="午" data-years="2026、2014、2002" data-note="午时十一点到十三点，阳气最盛，马属阳。取奋进、奔腾之意。" aria-pressed="false">马</button>
+          <button class="zodiac__btn" type="button" data-zodiac="羊" data-branch="未" data-years="2027、2015、2003" data-note="未时十三到十五点，是放羊的好时候。羊与“祥”通，取和顺、吉祥之意。" aria-pressed="false">羊</button>
+          <button class="zodiac__btn" type="button" data-zodiac="猴" data-branch="申" data-years="2028、2016、2004" data-note="申时十五到十七点，猴最活跃。取灵巧、聪慧之意。" aria-pressed="false">猴</button>
+          <button class="zodiac__btn" type="button" data-zodiac="鸡" data-branch="酉" data-years="2029、2017、2005" data-note="酉时十七到十九点，鸡归窝。鸡鸣报晓，取守信之意，古人还用鸡形饰物驱邪。" aria-pressed="false">鸡</button>
+          <button class="zodiac__btn" type="button" data-zodiac="狗" data-branch="戌" data-years="2030、2018、2006" data-note="戌时十九到二十一点，狗开始守夜警戒。取忠诚、守家之意。" aria-pressed="false">狗</button>
+          <button class="zodiac__btn" type="button" data-zodiac="猪" data-branch="亥" data-years="2031、2019、2007" data-note="亥时二十一到二十三点，夜深猪睡得最沉。猪象征丰足，取安逸、殷实之意。" aria-pressed="false">猪</button>
+        </div>
+
+        <div class="zodiac__panel">
+          <p class="zodiac__eyebrow">当前查看</p>
+          <div class="zodiac__title">
+            <h3 class="zodiac__name" id="zodiac-name">龙</h3>
+            <span class="zodiac__chip" id="zodiac-branch">辰</span>
+          </div>
+          <p class="zodiac__years" id="zodiac-years">龙年：2024、2012、2000</p>
+          <p class="zodiac__note" id="zodiac-note">辰时七到九点，传说群龙行雨。龙是十二生肖里唯一虚构的动物，取尊贵、祥瑞之意。</p>
+
+          <div class="zodiac__gz">
+            <div class="zodiac__gz-row">
+              <p class="zodiac__gz-label">天干</p>
+              <p class="zodiac__gz-chars">甲乙丙丁戊己庚辛壬癸</p>
+            </div>
+            <div class="zodiac__gz-row">
+              <p class="zodiac__gz-label">地支</p>
+              <p class="zodiac__gz-chars">子丑寅卯辰巳午未申酉戌亥</p>
+            </div>
+            <p class="zodiac__gz-text">十天干与十二地支依次相配，从甲子到癸亥，六十年轮回一次，称“一甲子”。生肖随地支固定：子鼠、丑牛、寅虎、卯兔——所以属相每十二年回到原处。</p>
+          </div>
+          <p class="sr-only" aria-live="polite" id="zodiac-status"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 肆 · 纹样 ========== -->
+    <section class="section" id="patterns" aria-labelledby="patterns-title">
+      <header class="section__head">
+        <span class="section__index" aria-hidden="true" data-stamp>肆</span>
+        <div>
+          <h2 class="section__title" id="patterns-title">纹样</h2>
+          <p class="section__lede">中国人把祝福画成图案：一只蝙蝠是“福”，一条鱼是“余”。谐音与象征，凑成一套不必写字的年节语言。</p>
+        </div>
+      </header>
+
+      <ul class="patterns">
+        <li class="pattern" data-reveal>
+          <span class="pattern__figure" aria-hidden="true">
+            <svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+              <circle cx="60" cy="44" r="6.5"/>
+              <path d="M55 39l-2.5-6 5.5 4M65 39l2.5-6-5.5 4"/>
+              <ellipse cx="60" cy="59" rx="6.5" ry="10"/>
+              <path d="M54 52C44 44 30 42 20 48c-4 2-6 7-5 12 4-3 8-2 9 2 4-3 8-2 9 2 4-3 8-2 9 2 4-2 8-4 12-6"/>
+              <path d="M66 52c10-8 24-10 34-4 4 2 6 7 5 12-4-3-8-2-9 2-4-3-8-2-9 2-4-3-8-2-9 2-4-2-8-4-12-6"/>
+              <path d="M58 68l2 7 2-7"/>
+            </svg>
+          </span>
+          <h3 class="pattern__name">蝙蝠</h3>
+          <p class="pattern__hint">谐“福”</p>
+          <p class="pattern__text">蝠与福同音，是最常用的年节纹样。五只蝙蝠环绕，即“五福临门”。</p>
+        </li>
+
+        <li class="pattern" data-reveal>
+          <span class="pattern__figure" aria-hidden="true">
+            <svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+              <g transform="translate(14 0)">
+                <path d="M20 60c9-13 25-13 34 0-9 13-25 13-34 0Z"/>
+                <path d="M54 60l15-10v20Z"/>
+                <circle cx="32" cy="57" r="1.8"/>
+                <path d="M40 55c3 2 4 4 4 5s-1 3-4 5"/>
+                <path d="M38 51c3-6 8-6 11 0M38 69c3 6 8 6 11 0"/>
+              </g>
+            </svg>
+          </span>
+          <h3 class="pattern__name">鱼</h3>
+          <p class="pattern__hint">谐“余”</p>
+          <p class="pattern__text">年年有余。年夜饭的鱼常留头留尾，双鱼相并则取“吉庆有余”。</p>
+        </li>
+
+        <li class="pattern" data-reveal>
+          <span class="pattern__figure" aria-hidden="true">
+            <svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+              <path d="M60 28c-7 0-13 5-13 12 0 4 2 7 2 10-10 4-17 13-17 23 0 11 12 19 28 19s28-8 28-19c0-10-7-19-17-23 0-3 2-6 2-10 0-7-6-12-13-12Z"/>
+              <path d="M60 28v-8M56 20h8"/>
+              <path d="M49 50h22" opacity=".5"/>
+            </svg>
+          </span>
+          <h3 class="pattern__name">葫芦</h3>
+          <p class="pattern__hint">谐“福禄”</p>
+          <p class="pattern__text">葫芦多籽，藤蔓绵长，既喻多子，也喻福禄万代不断。</p>
+        </li>
+
+        <li class="pattern" data-reveal>
+          <span class="pattern__figure" aria-hidden="true">
+            <svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+              <path d="M60 40c13 0 22 10 22 22s-9 20-22 20-22-8-22-20 9-22 22-22Z"/>
+              <path d="M54 40l-3-8 5 4 4-6 4 6 5-4-3 8"/>
+              <path d="M44 62c10 3 22 3 32 0" stroke="var(--gold)" stroke-width="1.4"/>
+              <circle cx="52" cy="70" r="2.4"/><circle cx="60" cy="74" r="2.4"/><circle cx="68" cy="70" r="2.4"/>
+              <circle cx="56" cy="64" r="2.4"/><circle cx="64" cy="64" r="2.4"/>
+            </svg>
+          </span>
+          <h3 class="pattern__name">石榴</h3>
+          <p class="pattern__hint">多籽 · 多子</p>
+          <p class="pattern__text">籽粒饱满，剖开见百子。“榴开百子”是老式婚嫁器物上最常见的祝语。</p>
+        </li>
+
+        <li class="pattern" data-reveal>
+          <span class="pattern__figure" aria-hidden="true">
+            <svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+              <circle cx="46" cy="70" r="17"/>
+              <circle cx="78" cy="76" r="12"/>
+              <path d="M46 53c-6 0-9-3-9-6 4-1 7 1 9 4 2-3 5-5 9-4 0 3-3 6-9 6Z"/>
+              <path d="M78 64c-4 0-6-2-6-4 3-1 5 0 6 3 1-3 3-4 6-3 0 2-2 4-6 4Z"/>
+              <path d="M46 47v-6M78 60v-5" stroke="var(--gold)" stroke-width="1.4"/>
+            </svg>
+          </span>
+          <h3 class="pattern__name">柿子</h3>
+          <p class="pattern__hint">谐“事”</p>
+          <p class="pattern__text">两枚并置，就是“事事如意”。柿子色橙红，也正合年节的喜气。</p>
+        </li>
+
+        <li class="pattern" data-reveal>
+          <span class="pattern__figure" aria-hidden="true">
+            <svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+              <circle cx="60" cy="60" r="26"/>
+              <rect x="48" y="48" width="24" height="24"/>
+              <circle cx="60" cy="60" r="19" stroke="var(--gold)" stroke-width="1.2" stroke-dasharray="2 6"/>
+            </svg>
+          </span>
+          <h3 class="pattern__name">铜钱</h3>
+          <p class="pattern__hint">财源</p>
+          <p class="pattern__text">外圆内方，取“天圆地方”。钱纹相连成串，就是“财源不断”。</p>
+        </li>
+
+        <li class="pattern" data-reveal>
+          <span class="pattern__figure" aria-hidden="true">
+            <svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+              <path d="M32 78c-9 0-16-6-16-14s7-14 15-14c1-10 8-17 18-17 9 0 16 6 18 14 8 0 15 6 15 15 0 8-7 16-16 16H32Z"/>
+            </svg>
+          </span>
+          <h3 class="pattern__name">祥云</h3>
+          <p class="pattern__hint">吉祥</p>
+          <p class="pattern__text">云气升腾，取“平步青云”。云纹也常垫在龙、凤、蝙蝠之下作底。</p>
+        </li>
+
+        <li class="pattern" data-reveal>
+          <span class="pattern__figure" aria-hidden="true">
+            <svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+              <path d="M14 75V45h20v30h18V45h18v30h18V45h18v30"/>
+            </svg>
+          </span>
+          <h3 class="pattern__name">回纹</h3>
+          <p class="pattern__hint">绵延不断</p>
+          <p class="pattern__text">一线回环，首尾相续，俗称“富贵不断头”，多用于器物口沿与门框。</p>
+        </li>
+      </ul>
+
+      <p class="patterns-note">
+        <span class="patterns-note__label" aria-hidden="true">组</span>
+        <span>纹样常叠加使用：蝙蝠衔一枚铜钱，是“福在眼前”；葫芦缠上藤蔓，是“福禄万代”；两枚柿子配一枝如意，便是“事事如意”。</span>
+      </p>
+    </section>
+
+    <!-- ========== 伍 · 灯谜 ========== -->
+    <section class="section" id="riddles" aria-labelledby="riddles-title">
+      <header class="section__head">
+        <span class="section__index" aria-hidden="true" data-stamp>伍</span>
+        <div>
+          <h2 class="section__title" id="riddles-title">灯谜</h2>
+          <p class="section__lede">元宵夜的文字游戏。谜面绕着弯说，谜底往往就藏在一个被拆开的字里。</p>
+        </div>
+      </header>
+
+      <ul class="riddles">
+        <li class="riddle">
+          <span class="riddle__lantern" aria-hidden="true">
+            <svg viewBox="0 0 40 58" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" focusable="false">
+              <path d="M20 1v5"/>
+              <path d="M9 8h22l3 14-3 14H9l-3-14 3-14Z"/>
+              <path d="M20 8v4M20 32v4"/>
+              <path d="M7.5 14h25M7.5 36h25" opacity=".45"/>
+              <path d="M20 42v6M15 49h10"/>
+              <text x="20" y="27" text-anchor="middle" font-size="13" font-weight="600" fill="currentColor" stroke="none" font-family="serif">一</text>
+            </svg>
+          </span>
+          <div class="riddle__body">
+            <p class="riddle__q">岁岁除夕</p>
+            <p class="riddle__meta">打一字</p>
+            <button class="riddle__toggle" type="button" aria-expanded="false" aria-controls="riddle-answer-1">看谜底</button>
+            <div class="riddle__answer" id="riddle-answer-1" hidden>
+              <p class="riddle__word">出</p>
+              <p class="riddle__why">两个“岁”字各去掉“夕”，剩下两个“山”，合起来就是“出”。</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="riddle">
+          <span class="riddle__lantern" aria-hidden="true">
+            <svg viewBox="0 0 40 58" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" focusable="false">
+              <path d="M20 1v5"/>
+              <path d="M9 8h22l3 14-3 14H9l-3-14 3-14Z"/>
+              <path d="M20 8v4M20 32v4"/>
+              <path d="M7.5 14h25M7.5 36h25" opacity=".45"/>
+              <path d="M20 42v6M15 49h10"/>
+              <text x="20" y="27" text-anchor="middle" font-size="13" font-weight="600" fill="currentColor" stroke="none" font-family="serif">二</text>
+            </svg>
+          </span>
+          <div class="riddle__body">
+            <p class="riddle__q">一口咬掉牛尾巴</p>
+            <p class="riddle__meta">打一字</p>
+            <button class="riddle__toggle" type="button" aria-expanded="false" aria-controls="riddle-answer-2">看谜底</button>
+            <div class="riddle__answer" id="riddle-answer-2" hidden>
+              <p class="riddle__word">告</p>
+              <p class="riddle__why">“牛”的一竖被“口”咬掉下半截，剩下的上半部分与“口”相合，就是“告”。</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="riddle">
+          <span class="riddle__lantern" aria-hidden="true">
+            <svg viewBox="0 0 40 58" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" focusable="false">
+              <path d="M20 1v5"/>
+              <path d="M9 8h22l3 14-3 14H9l-3-14 3-14Z"/>
+              <path d="M20 8v4M20 32v4"/>
+              <path d="M7.5 14h25M7.5 36h25" opacity=".45"/>
+              <path d="M20 42v6M15 49h10"/>
+              <text x="20" y="27" text-anchor="middle" font-size="13" font-weight="600" fill="currentColor" stroke="none" font-family="serif">三</text>
+            </svg>
+          </span>
+          <div class="riddle__body">
+            <p class="riddle__q">千里相逢</p>
+            <p class="riddle__meta">打一字</p>
+            <button class="riddle__toggle" type="button" aria-expanded="false" aria-controls="riddle-answer-3">看谜底</button>
+            <div class="riddle__answer" id="riddle-answer-3" hidden>
+              <p class="riddle__word">重</p>
+              <p class="riddle__why">“千”在上、“里”在下，两字上下相叠，正是“重”。</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="riddle">
+          <span class="riddle__lantern" aria-hidden="true">
+            <svg viewBox="0 0 40 58" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" focusable="false">
+              <path d="M20 1v5"/>
+              <path d="M9 8h22l3 14-3 14H9l-3-14 3-14Z"/>
+              <path d="M20 8v4M20 32v4"/>
+              <path d="M7.5 14h25M7.5 36h25" opacity=".45"/>
+              <path d="M20 42v6M15 49h10"/>
+              <text x="20" y="27" text-anchor="middle" font-size="13" font-weight="600" fill="currentColor" stroke="none" font-family="serif">四</text>
+            </svg>
+          </span>
+          <div class="riddle__body">
+            <p class="riddle__q">人有了它，就变大</p>
+            <p class="riddle__meta">打一字</p>
+            <button class="riddle__toggle" type="button" aria-expanded="false" aria-controls="riddle-answer-4">看谜底</button>
+            <div class="riddle__answer" id="riddle-answer-4" hidden>
+              <p class="riddle__word">一</p>
+              <p class="riddle__why">“人”加一横成“大”，所以这“一”就是谜底。</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="riddle">
+          <span class="riddle__lantern" aria-hidden="true">
+            <svg viewBox="0 0 40 58" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" focusable="false">
+              <path d="M20 1v5"/>
+              <path d="M9 8h22l3 14-3 14H9l-3-14 3-14Z"/>
+              <path d="M20 8v4M20 32v4"/>
+              <path d="M7.5 14h25M7.5 36h25" opacity=".45"/>
+              <path d="M20 42v6M15 49h10"/>
+              <text x="20" y="27" text-anchor="middle" font-size="13" font-weight="600" fill="currentColor" stroke="none" font-family="serif">五</text>
+            </svg>
+          </span>
+          <div class="riddle__body">
+            <p class="riddle__q">一夜连双岁，五更分二年</p>
+            <p class="riddle__meta">打一习俗</p>
+            <button class="riddle__toggle" type="button" aria-expanded="false" aria-controls="riddle-answer-5">看谜底</button>
+            <div class="riddle__answer" id="riddle-answer-5" hidden>
+              <p class="riddle__word">守岁</p>
+              <p class="riddle__why">一夜跨过两个年头，五更分属两个年份——正是除夕守岁。</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="riddle riddle--note">
+          <p class="riddle__note-label">灯谜小识</p>
+          <h3 class="riddle__note-title">别解，才是灯谜</h3>
+          <p class="riddle__note-text">灯谜分三段：谜面是给出的字句，谜目限定答案的范围，谜底才是答案。关键手法叫“别解”——故意把字词挪到另一个意思上。比如“岁岁除夕”，不是真的过年，而是把“夕”从“岁”字里除去。</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ========== 陆 · 诗词 ========== -->
+    <section class="section" id="poems" aria-labelledby="poems-title">
+      <header class="section__head">
+        <span class="section__index" aria-hidden="true" data-stamp>陆</span>
+        <div>
+          <h2 class="section__title" id="poems-title">诗词</h2>
+          <p class="section__lede">五首诗词，五种年味。从爆竹声里的新岁，到旅舍灯下的乡愁。</p>
+        </div>
+      </header>
+
+      <div class="poems__grid">
+        <div class="poem-tabs" role="tablist" aria-label="诗词目录">
+          <button class="poem-tab" type="button" role="tab" id="poem-tab-1" aria-selected="true" aria-controls="poem-panel-1" tabindex="0" data-title="元日" data-meta="宋　王安石">
+            <span class="poem-tab__title">元日</span>
+            <span class="poem-tab__meta">宋　王安石</span>
+          </button>
+          <button class="poem-tab" type="button" role="tab" id="poem-tab-2" aria-selected="false" aria-controls="poem-panel-2" tabindex="-1" data-title="除夜作" data-meta="唐　高适">
+            <span class="poem-tab__title">除夜作</span>
+            <span class="poem-tab__meta">唐　高适</span>
+          </button>
+          <button class="poem-tab" type="button" role="tab" id="poem-tab-3" aria-selected="false" aria-controls="poem-panel-3" tabindex="-1" data-title="拜年" data-meta="明　文征明">
+            <span class="poem-tab__title">拜年</span>
+            <span class="poem-tab__meta">明　文征明</span>
+          </button>
+          <button class="poem-tab" type="button" role="tab" id="poem-tab-4" aria-selected="false" aria-controls="poem-panel-4" tabindex="-1" data-title="守岁" data-meta="宋　苏轼">
+            <span class="poem-tab__title">守岁</span>
+            <span class="poem-tab__meta">宋　苏轼（节选）</span>
+          </button>
+          <button class="poem-tab" type="button" role="tab" id="poem-tab-5" aria-selected="false" aria-controls="poem-panel-5" tabindex="-1" data-title="除夜雪" data-meta="宋　陆游">
+            <span class="poem-tab__title">除夜雪</span>
+            <span class="poem-tab__meta">宋　陆游</span>
+          </button>
+        </div>
+
+        <div class="poem-panels">
+          <div class="poem-panel" id="poem-panel-1" role="tabpanel" aria-labelledby="poem-tab-1" tabindex="0">
+            <div class="poem-panel__head">
+              <p class="poem-panel__meta">宋　王安石</p>
+              <h3 class="poem-panel__title">元日</h3>
+            </div>
+            <div class="poem-panel__verse">
+              <span class="seal poem-panel__seal" aria-hidden="true">王安石</span>
+              <div class="poem-lines">
+                <span class="poem-line">爆竹声中一岁除，</span>
+                <span class="poem-line">春风送暖入屠苏。</span>
+                <span class="poem-line">千门万户曈曈日，</span>
+                <span class="poem-line">总把新桃换旧符。</span>
+              </div>
+            </div>
+            <div class="poem-panel__note">
+              <p class="poem-panel__note-label">赏析</p>
+              <p>以爆竹、屠苏、曈曈日、新桃换旧符四个新年意象，写出除旧迎新的明快气象。</p>
+            </div>
+          </div>
+
+          <div class="poem-panel" id="poem-panel-2" role="tabpanel" aria-labelledby="poem-tab-2" tabindex="0" hidden>
+            <div class="poem-panel__head">
+              <p class="poem-panel__meta">唐　高适</p>
+              <h3 class="poem-panel__title">除夜作</h3>
+            </div>
+            <div class="poem-panel__verse">
+              <span class="seal poem-panel__seal" aria-hidden="true">高适</span>
+              <div class="poem-lines">
+                <span class="poem-line">旅馆寒灯独不眠，</span>
+                <span class="poem-line">客心何事转凄然。</span>
+                <span class="poem-line">故乡今夜思千里，</span>
+                <span class="poem-line">霜鬓明朝又一年。</span>
+              </div>
+            </div>
+            <div class="poem-panel__note">
+              <p class="poem-panel__note-label">赏析</p>
+              <p>除夕客居旅馆，以寒灯、霜鬓写羁旅之思与时光之叹。</p>
+            </div>
+          </div>
+
+          <div class="poem-panel" id="poem-panel-3" role="tabpanel" aria-labelledby="poem-tab-3" tabindex="0" hidden>
+            <div class="poem-panel__head">
+              <p class="poem-panel__meta">明　文征明</p>
+              <h3 class="poem-panel__title">拜年</h3>
+            </div>
+            <div class="poem-panel__verse">
+              <span class="seal poem-panel__seal" aria-hidden="true">文征明</span>
+              <div class="poem-lines">
+                <span class="poem-line">不求见面惟通谒，</span>
+                <span class="poem-line">名纸朝来满敝庐。</span>
+                <span class="poem-line">我亦随人投数纸，</span>
+                <span class="poem-line">世情嫌简不嫌虚。</span>
+              </div>
+            </div>
+            <div class="poem-panel__note">
+              <p class="poem-panel__note-label">赏析</p>
+              <p>写明代拜年投递名帖的风俗，语带讥诮，是古代“社交拜年”的生动记录。</p>
+            </div>
+          </div>
+
+          <div class="poem-panel" id="poem-panel-4" role="tabpanel" aria-labelledby="poem-tab-4" tabindex="0" hidden>
+            <div class="poem-panel__head">
+              <p class="poem-panel__meta">宋　苏轼（节选）</p>
+              <h3 class="poem-panel__title">守岁</h3>
+            </div>
+            <div class="poem-panel__verse">
+              <span class="seal poem-panel__seal" aria-hidden="true">苏轼</span>
+              <div class="poem-lines">
+                <span class="poem-line">儿童强不睡，</span>
+                <span class="poem-line">相守夜欢哗。</span>
+                <span class="poem-line">晨鸡且勿唱，</span>
+                <span class="poem-line">更鼓畏添挝。</span>
+              </div>
+            </div>
+            <div class="poem-panel__note">
+              <p class="poem-panel__note-label">赏析</p>
+              <p>捕捉孩童守岁强撑不睡、大人怕更鼓催年的细节，热闹中见惜时之情。</p>
+            </div>
+          </div>
+
+          <div class="poem-panel" id="poem-panel-5" role="tabpanel" aria-labelledby="poem-tab-5" tabindex="0" hidden>
+            <div class="poem-panel__head">
+              <p class="poem-panel__meta">宋　陆游</p>
+              <h3 class="poem-panel__title">除夜雪</h3>
+            </div>
+            <div class="poem-panel__verse">
+              <span class="seal poem-panel__seal" aria-hidden="true">陆游</span>
+              <div class="poem-lines">
+                <span class="poem-line">北风吹雪四更初，</span>
+                <span class="poem-line">嘉瑞天教及岁除。</span>
+                <span class="poem-line">半盏屠苏犹未举，</span>
+                <span class="poem-line">灯前小草写桃符。</span>
+              </div>
+            </div>
+            <div class="poem-panel__note">
+              <p class="poem-panel__note-label">赏析</p>
+              <p>除夕夜雪、屠苏未举、灯下写桃符，写出文人守岁的清雅年景。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="sr-only" aria-live="polite" id="poem-status"></p>
+    </section>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <div class="footer__inner">
+    <p class="footer__closing">岁岁常欢愉，年年皆胜意。</p>
+    <div class="footer__grid">
+      <div class="footer__col">
+        <p class="footer__label">设计</p>
+        <p>当代东方编辑风。以宣纸、朱砂、墨色为底，窗花、朱砂线、印章与年俗插画贯穿全页；生肖轮盘、纹样图鉴与灯谜三章把年俗拆成可读、可点、可玩的三层。</p>
+      </div>
+      <div class="footer__col">
+        <p class="footer__label">图形与字体</p>
+        <p>窗花与印章为原创 SVG/CSS；年俗与起源插画由 AI 辅助生成，经裁切压缩；插画随页面提供，不加载网络字体。</p>
+      </div>
+      <div class="footer__col">
+        <p class="footer__label">内容参考</p>
+        <ul class="footer__links">
+          <li><a href="https://www.news.cn/20241204/b669269addc04694987284af8eac736c/c.html" target="_blank" rel="noopener noreferrer">新华社：春节申遗成功</a></li>
+          <li><a href="https://www.ihchina.cn/project_details/14904.html" target="_blank" rel="noopener noreferrer">中国非物质文化遗产网：春节</a></li>
+          <li><a href="http://paper.people.com.cn/rmrb/pc/content/202412/07/content_30033433.html" target="_blank" rel="noopener noreferrer">人民日报：我们的春节</a></li>
+          <li><a href="https://www.workercn.cn/c/2025-01-24/8443558.shtml" target="_blank" rel="noopener noreferrer">中工网：非遗春节里的传统民俗</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>网页制作比赛参赛作品 · 无网络依赖，可离线打开</p>
+      <a class="footer__top" href="#top">回到开头</a>
+    </div>
+  </div>
+</footer>
+
+<noscript>
+  <style>
+    .poem-tabs { display: none; }
+    .poem-panel[hidden] { display: block !important; }
+    .poem-panel + .poem-panel { margin-top: 24px; }
+    .riddle__toggle { display: none; }
+    .riddle__answer[hidden] { display: block !important; }
+    .zodiac__btn { cursor: default; }
+  </style>
+</noscript>
+
+<script>
+(function () {
+  'use strict';
+
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('[role="tab"]'));
+  var panels = tabs.map(function (tab) {
+    return document.getElementById(tab.getAttribute('aria-controls'));
+  });
+  var tablist = document.querySelector('[role="tablist"]');
+  var status = document.getElementById('poem-status');
+
+  /* ---------- 章节导航高亮 ---------- */
+  var sections = Array.prototype.slice.call(document.querySelectorAll('main section[id]'));
+  var navLinks = Array.prototype.slice.call(document.querySelectorAll('[data-nav]'));
+
+  function setActiveNav(id) {
+    navLinks.forEach(function (link) {
+      if (link.getAttribute('data-nav') === id) {
+        link.setAttribute('aria-current', 'location');
+      } else {
+        link.removeAttribute('aria-current');
+      }
+    });
+  }
+
+  if ('IntersectionObserver' in window && sections.length) {
+    var navObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) setActiveNav(entry.target.id);
+      });
+    }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
+    sections.forEach(function (section) { navObserver.observe(section); });
+  }
+
+  /* ---------- 阅读进度线 ---------- */
+  var progress = document.querySelector('.rail__progress');
+  var spark = document.querySelector('.rail__spark');
+  var ticking = false;
+
+  function updateProgress() {
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    var ratio = max > 0 ? Math.min(1, Math.max(0, window.scrollY / max)) : 0;
+    if (progress) progress.style.transform = 'scaleY(' + ratio + ')';
+    if (spark && spark.parentNode) {
+      spark.style.top = (ratio * spark.parentNode.offsetHeight) + 'px';
+      spark.classList.toggle('is-on', ratio > 0.002 && ratio < 0.998);
+    }
+    ticking = false;
+  }
+
+  function requestProgress() {
+    if (!ticking) {
+      ticking = true;
+      window.requestAnimationFrame(updateProgress);
+    }
+  }
+
+  window.addEventListener('scroll', requestProgress, { passive: true });
+  window.addEventListener('resize', requestProgress, { passive: true });
+  updateProgress();
+
+  /* ---------- 诗词切换 ---------- */
+  function setOrientation() {
+    if (!tablist) return;
+    tablist.setAttribute('aria-orientation', window.innerWidth < 768 ? 'horizontal' : 'vertical');
+  }
+  setOrientation();
+  window.addEventListener('resize', setOrientation, { passive: true });
+
+  function activate(index, focusTab, announce) {
+    if (!tabs.length) return;
+
+    tabs.forEach(function (tab, i) {
+      var selected = i === index;
+      tab.setAttribute('aria-selected', selected ? 'true' : 'false');
+      tab.tabIndex = selected ? 0 : -1;
+
+      var panel = panels[i];
+      if (!panel) return;
+      panel.hidden = !selected;
+
+      if (selected && announce && !reduceMotion.matches) {
+        panel.classList.remove('is-switching');
+        /* 强制回流，让动画可以重新开始 */
+        void panel.offsetWidth;
+        panel.classList.add('is-switching');
+      }
+    });
+
+    if (focusTab) tabs[index].focus();
+
+    if (announce && status) {
+      status.textContent = '已切换到《' + tabs[index].getAttribute('data-title') + '》，' + tabs[index].getAttribute('data-meta');
+    }
+  }
+
+  tabs.forEach(function (tab, i) {
+    tab.addEventListener('click', function () { activate(i, false, true); });
+    tab.addEventListener('keydown', function (event) {
+      var next = null;
+      if (event.key === 'ArrowDown' || event.key === 'ArrowRight') next = (i + 1) % tabs.length;
+      else if (event.key === 'ArrowUp' || event.key === 'ArrowLeft') next = (i - 1 + tabs.length) % tabs.length;
+      else if (event.key === 'Home') next = 0;
+      else if (event.key === 'End') next = tabs.length - 1;
+
+      if (next !== null) {
+        event.preventDefault();
+        activate(next, true, true);
+      }
+    });
+  });
+
+  /* 初始状态：第一首可见，不播报、不播放切换动画 */
+  activate(0, false, false);
+
+  /* ---------- 生肖轮盘 ---------- */
+  var zodiacBtns = Array.prototype.slice.call(document.querySelectorAll('.zodiac__btn'));
+  var zodiacStatus = document.getElementById('zodiac-status');
+  var zodiacName = document.getElementById('zodiac-name');
+  var zodiacBranch = document.getElementById('zodiac-branch');
+  var zodiacYears = document.getElementById('zodiac-years');
+  var zodiacNote = document.getElementById('zodiac-note');
+  var zodiacHubChar = document.getElementById('zodiac-hub-char');
+  var zodiacHubBranch = document.getElementById('zodiac-hub-branch');
+
+  function selectZodiac(btn, focus, announce) {
+    if (!btn) return;
+
+    zodiacBtns.forEach(function (item) {
+      item.setAttribute('aria-pressed', item === btn ? 'true' : 'false');
+    });
+
+    var name = btn.getAttribute('data-zodiac');
+    var branch = btn.getAttribute('data-branch');
+    var years = btn.getAttribute('data-years');
+    var note = btn.getAttribute('data-note');
+
+    if (zodiacName) zodiacName.textContent = name;
+    if (zodiacBranch) zodiacBranch.textContent = branch;
+    if (zodiacYears) zodiacYears.textContent = name + '年：' + years;
+    if (zodiacNote) zodiacNote.textContent = note;
+    if (zodiacHubChar) zodiacHubChar.textContent = name;
+    if (zodiacHubBranch) zodiacHubBranch.textContent = branch;
+
+    if (focus) btn.focus();
+    if (announce && zodiacStatus) {
+      zodiacStatus.textContent = '已选择属' + name + '，对应地支' + branch + '。' + note;
+    }
+  }
+
+  zodiacBtns.forEach(function (btn, i) {
+    btn.addEventListener('click', function () { selectZodiac(btn, false, true); });
+    btn.addEventListener('keydown', function (event) {
+      var next = null;
+      if (event.key === 'ArrowRight' || event.key === 'ArrowDown') next = (i + 1) % zodiacBtns.length;
+      else if (event.key === 'ArrowLeft' || event.key === 'ArrowUp') next = (i - 1 + zodiacBtns.length) % zodiacBtns.length;
+      else if (event.key === 'Home') next = 0;
+      else if (event.key === 'End') next = zodiacBtns.length - 1;
+
+      if (next !== null) {
+        event.preventDefault();
+        selectZodiac(zodiacBtns[next], true, true);
+      }
+    });
+  });
+
+  /* 初始状态：与 HTML 中标记为选中的生肖保持一致 */
+  selectZodiac(document.querySelector('.zodiac__btn[aria-pressed="true"]') || zodiacBtns[0], false, false);
+
+  /* ---------- 灯谜揭底 ---------- */
+  var riddleBtns = Array.prototype.slice.call(document.querySelectorAll('.riddle__toggle'));
+  riddleBtns.forEach(function (btn) {
+    var answer = document.getElementById(btn.getAttribute('aria-controls'));
+    btn.addEventListener('click', function () {
+      var open = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', open ? 'false' : 'true');
+      if (answer) answer.hidden = open;
+      btn.textContent = open ? '看谜底' : '收起';
+    });
+  });
+
+  /* ---------- 进入视口时点亮 / 章节印章落印 ---------- */
+  var revealItems = Array.prototype.slice.call(document.querySelectorAll('[data-reveal]'));
+  var stampItems = Array.prototype.slice.call(document.querySelectorAll('[data-stamp]'));
+  var motionItems = revealItems.concat(stampItems);
+
+  function revealItem(item) {
+    item.classList.add(item.hasAttribute('data-stamp') ? 'is-stamped' : 'is-revealed');
+  }
+
+  if (reduceMotion.matches || !('IntersectionObserver' in window)) {
+    motionItems.forEach(revealItem);
+  } else {
+    var revealObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          revealItem(entry.target);
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { rootMargin: '0px 0px -10% 0px', threshold: 0.08 });
+    motionItems.forEach(function (item) { revealObserver.observe(item); });
+  }
+
+  /* ---------- 用户切换系统动效设置时，立即补全点亮状态 ---------- */
+  if (typeof reduceMotion.addEventListener === 'function') {
+    reduceMotion.addEventListener('change', function (event) {
+      if (event.matches) {
+        motionItems.forEach(revealItem);
+      }
+    });
+  }
+})();
+</script>
+</body>
+</html>
